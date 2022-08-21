@@ -1,17 +1,18 @@
 ---
 import menu from '~/lib/menu'
 import Icon from 'astro-icon'
+import site from '~/lib/site'
 ---
 
-<header class="fixed top-0 inset-0">
-  <nav class="navbar bg-base-100 max-w-screen-lg mx-auto">
+<header class="header">
+  <nav class="navbar bg-base-100 max-w-screen-xl mx-auto">
     <div class="flex-none">
       <label class="btn btn-ghost btn-square md:hidden" for="main-drawer">
         <Icon name="mdi:menu" />
       </label>
     </div>
     <div class="flex-1">
-      <a href="/" class="title">Astro</a>
+      <a href="/" class="title">{site.name}</a>
     </div>
     <div class="flex-none">
       <ul class="hidden md:menu md:menu-horizontal p-0">
@@ -33,5 +34,13 @@ import Icon from 'astro-icon'
 <style lang="scss">
   .title {
     @apply btn btn-ghost normal-case text-2xl font-bold;
+  }
+
+  .header {
+    @apply fixed top-0 inset-x-0 z-[1];
+  }
+
+  [astro-icon] {
+    @apply w-[24px] h-[24px];
   }
 </style>

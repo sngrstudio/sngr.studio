@@ -1,16 +1,16 @@
 const menu = [
   {
-    title: 'Menu 1',
+    title: 'Proyek',
     link: '#',
     icon: '',
   },
   {
-    title: 'Menu 2',
+    title: 'Layanan',
     link: '#',
     icon: '',
   },
   {
-    title: 'Menu 3',
+    title: 'Hubungi Kami',
     link: '#',
     icon: '',
   },

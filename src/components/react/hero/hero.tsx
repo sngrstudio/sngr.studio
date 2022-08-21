@@ -1,25 +1,21 @@
 import type { FC } from 'react'
+import site from '~/lib/site'
 import style from './hero.module.scss'
+
+const ssPlaceholder = 'https://placekitten.com/600/375'
 
 const Hero: FC = () => (
   <section className="hero min-h-screen">
-    <div className="hero-content">
-      <div className="max-w-md">
-        <h1 className={style.h1}>A template for production</h1>
-        <p className="text-center mb-2">
-          The template is created using{' '}
-          <a className="link-hover" href="https://astro.build" rel="nofollow">
-            Astro
-          </a>{' '}
-          and a pinch of React. Batteries included: SASS, TailwindCSS + DaisyUI,
-          PostCSS with Autoprefixer and Font Magician plugin.
-        </p>
-        <p className="text-center italic text-sm">
-          a{' '}
-          <a className="link-hover" href="http://sngr.studio/">
-            SNGR Studio
-          </a>{' '}
-          tool. (c) {new Date().getFullYear()}
+    <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="mockup-window border bg-base-300 rounded-lg">
+        <img src={ssPlaceholder} width={600} height={370} alt="placeholder" />
+      </div>
+      <div className="max-w-screen-md">
+        <h1 className={style.h1}>{site.slogan}</h1>
+        <p className="text-left text-lg md:text-xl">
+          SNGR Studio membantu bisnis, UMKM, dan individual untuk meningkatkan
+          presensi di dunia maya melalui tampilan website yang ringan, cepat dan
+          aman.
         </p>
       </div>
     </div>
