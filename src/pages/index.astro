@@ -1,8 +1,15 @@
 ---
 import BaseLayout from '~/layouts/base.astro'
 import Hero from '~/components/react/hero'
+import { SEO } from 'astro-seo'
+import site from '~/lib/site'
 ---
 
 <BaseLayout>
+  <SEO
+    title={`${site.name} \u2014 ${site.slogan}`}
+    description={site.description}
+    slot="head"
+  />
   <Hero />
 </BaseLayout>

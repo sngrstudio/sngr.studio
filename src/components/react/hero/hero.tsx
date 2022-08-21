@@ -12,11 +12,7 @@ const Hero: FC = () => (
       </div>
       <div className="max-w-screen-md">
         <h1 className={style.h1}>{site.slogan}</h1>
-        <p className="text-left text-lg md:text-xl">
-          SNGR Studio membantu bisnis, UMKM, dan individual untuk meningkatkan
-          presensi di dunia maya melalui tampilan website yang ringan, cepat dan
-          aman.
-        </p>
+        <p className="text-left text-lg md:text-xl">{site.description}</p>
       </div>
     </div>
   </section>
