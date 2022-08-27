@@ -1,14 +1,22 @@
 import type { FC } from 'react'
 import site from '~/lib/site'
+import getScreenshot from '~/lib/get-screenshot'
 import style from './hero.module.scss'
 
-const ssPlaceholder = 'https://placekitten.com/600/375'
+interface IHero {
+  screenshot: string
+}
 
-const Hero: FC = () => (
+const Hero: FC<IHero> = ({ screenshot }) => (
   <section className="hero min-h-screen">
     <div className="hero-content flex-col lg:flex-row-reverse">
       <div className="mockup-window border bg-base-300 rounded-lg">
-        <img src={ssPlaceholder} width={600} height={370} alt="placeholder" />
+        <img
+          src={getScreenshot(screenshot, 1280, 720)}
+          width={600}
+          height={370}
+          alt="placeholder"
+        />
       </div>
       <div className="max-w-screen-md">
         <h1 className={style.h1}>{site.slogan}</h1>

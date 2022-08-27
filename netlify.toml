@@ -1,15 +1,27 @@
 [build]
-command = "yarn build"
-publish = "dist"
+  command = "yarn build"
+  publish = "dist"
 
 [dev]
-framework = "astro"
-command = "yarn dev"
-autoLaunch = false
+  framework = "astro"
+  command = "yarn dev"
+  autoLaunch = false
 
 [[plugins]]
-package = "netlify-plugin-minify-html"
+  package = "netlify-plugin-minify-html"
     [plugins.inputs.minifierOptions]
     collapseWhitespace = true
     minifyJS = true
     processScripts = ["module"]
+
+[[redirects]]
+  from = "/screenshot/*"
+  to = "https://sngrapi.netlify.app/image/:splat"
+  status = 200
+  force = true
+  headers = { X-From = "Netlify" }
+
+[[headers]]
+  for = "/screenshot/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

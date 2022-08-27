@@ -1,14 +1,14 @@
 ---
 import menu from '~/lib/menu'
-import Icon from 'astro-icon'
 import site from '~/lib/site'
+import Icon from '~icons/mdi/menu'
 ---
 
 <header class="header">
   <nav class="navbar bg-base-100 max-w-screen-xl mx-auto">
     <div class="flex-none">
       <label class="btn btn-ghost btn-square md:hidden" for="main-drawer">
-        <Icon name="mdi:menu" />
+        <Icon style={{ fontSize: '24px' }} />
       </label>
     </div>
     <div class="flex-1">
@@ -38,9 +38,5 @@ import site from '~/lib/site'
 
   .header {
     @apply fixed top-0 inset-x-0 z-[1];
-  }
-
-  [astro-icon] {
-    @apply w-[24px] h-[24px];
   }
 </style>

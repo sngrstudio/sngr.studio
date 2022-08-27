@@ -17,6 +17,8 @@
     "importsNotUsedAsValues": "error",
     // disable impicit any check
     "noImplicitAny": false,
+    //types
+    "types": ["unplugin-icons/types/react"],
     //setup alias
     "baseUrl": ".",
     "paths": {
