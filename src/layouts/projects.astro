@@ -1,0 +1,44 @@
+---
+import BaseLayout from './base.astro'
+import { SEO } from 'astro-seo'
+
+const { frontmatter: fm } = Astro.props
+---
+
+<BaseLayout>
+  <SEO title={fm.title} slot="head" />
+  <section>
+    <article class="prose prose-lg max-w-none">
+      <h1>{fm.title}</h1>
+      <p class="__date">
+        <time datetime={fm.startDate}
+          >{
+            `Sejak ${new Date(fm.startDate).toLocaleDateString('id-ID', {
+              weekday: 'long',
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric',
+            })}`
+          }
+        </time>
+      </p>
+      <slot />
+    </article>
+  </section>
+</BaseLayout>
+
+<style lang="scss">
+  @use '../styles/fonts';
+
+  section {
+    @apply max-w-screen-md px-4 mt-16 mx-auto;
+  }
+
+  h1 {
+    @extend %heading;
+  }
+
+  .__date {
+    @apply uppercase;
+  }
+</style>

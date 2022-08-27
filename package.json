@@ -13,9 +13,11 @@
     "check": "prettier --check ."
   },
   "devDependencies": {
+    "@astrojs/prefetch": "^0.0.7",
     "@astrojs/react": "^1.1.0",
     "@iconify-json/mdi": "^1.1.31",
     "@svgr/core": "^6.3.1",
+    "@tailwindcss/typography": "^0.5.4",
     "astro": "^1.1.1",
     "astro-seo": "^0.6.0",
     "autoprefixer": "^10.4.8",
