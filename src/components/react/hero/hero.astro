@@ -1,0 +1,14 @@
+---
+import Hero from './hero'
+import { Image } from './image'
+
+export interface Props {
+  screenshot: string
+}
+
+const { screenshot } = Astro.props as Props
+---
+
+<Hero>
+  <Image image={screenshot} client:idle />
+</Hero>

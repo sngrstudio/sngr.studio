@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import LoadingIcon from '~icons/mdi/loading'
-import style from './placeholder.module.scss'
+import style from './image.module.scss'
 
 const Loading: FC = () => (
   <div className={style.__window}>
