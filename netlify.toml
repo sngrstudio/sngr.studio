@@ -15,13 +15,13 @@
     processScripts = ["module"]
 
 [[redirects]]
-  from = "/screenshot/*"
+  from = "/screenshot/"
   to = "https://sngrapi.netlify.app/img/"
   status = 200
   force = true
   headers = { X-From = "Netlify" }
 
 [[headers]]
-  for = "/screenshot/*"
+  for = "/screenshot/"
   [headers.values]
     Access-Control-Allow-Origin = "*"
