@@ -2,7 +2,7 @@ import type { FC } from 'react'
 import { Loading } from '../placeholder'
 import useSWR from 'swr'
 import site from '~/lib/site'
-import getScreenshot, { getScreenshotUrlWQuery } from '~/lib/get-screenshot'
+import getScreenshot, { getScreenshotUrl } from '~/lib/get-screenshot'
 import style from './hero.module.scss'
 import imgStyle from '../placeholder/placeholder.module.scss'
 
@@ -11,7 +11,7 @@ interface IHero {
 }
 
 const HeroImage: FC = ({ image }) => {
-  const { data } = useSWR(getScreenshotUrlWQuery(image), getScreenshot)
+  const { data } = useSWR(getScreenshotUrl(image), getScreenshot)
 
   if (!data) return <Loading />
   return (
