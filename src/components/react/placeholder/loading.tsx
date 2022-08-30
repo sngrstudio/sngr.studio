@@ -4,13 +4,17 @@ import style from './placeholder.module.scss'
 
 const Loading: FC = () => (
   <div className={style.__window}>
-    <img
-      className="w-max"
-      src="https://placekitten.com/462/260"
-      width={462}
-      height={260}
-      alt="loading"
-    />
+    <div className="aspect-w-16 aspect-h-9 relative">
+      <div
+        className="min-w-[320px] pb-[52.65%]"
+        dangerouslySetInnerHTML={{ __html: '&nbsp;' }}
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <span className="animate-spin">
+          <LoadingIcon />
+        </span>
+      </div>
+    </div>
   </div>
 )
 

@@ -1,9 +1,8 @@
 import type { FC } from 'react'
-import { Suspense } from 'react'
 import { Loading } from '../placeholder'
 import useSWR from 'swr'
 import site from '~/lib/site'
-import getScreenshot, { getScreenshotUrl } from '~/lib/get-screenshot'
+import getScreenshot, { getScreenshotUrlWQuery } from '~/lib/get-screenshot'
 import style from './hero.module.scss'
 import imgStyle from '../placeholder/placeholder.module.scss'
 
@@ -12,22 +11,18 @@ interface IHero {
 }
 
 const HeroImage: FC = ({ image }) => {
-  const { data } = useSWR(getScreenshotUrl(image), getScreenshot, {
-    suspense: true,
-  })
+  const { data } = useSWR(getScreenshotUrlWQuery(image), getScreenshot)
 
+  if (!data) return <Loading />
   return (
-    //<Loading />
-    <Suspense fallback={<Loading />}>
-      <div className={imgStyle.__window}>
-        <img className="w-full" src={data} width={462} height={260} alt="" />
-      </div>
-    </Suspense>
+    <div className={imgStyle.__window}>
+      <img className="w-full" src={data} width={463} height={260} alt="" />
+    </div>
   )
 }
 
 const Hero: FC<IHero> = ({ screenshot }) => (
-  <section className="hero min-h-screen">
+  <section className="hero min-h-[90vh]">
     <div className="hero-content flex-col lg:flex-row-reverse">
       <HeroImage image={screenshot} />
       <div className="max-w-screen-md">

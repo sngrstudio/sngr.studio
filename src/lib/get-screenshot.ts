@@ -3,6 +3,10 @@ export const getScreenshotUrl = (url: string, w?: number, h?: number) =>
     .filter(Boolean)
     .join('/')
 
+export const getScreenshotUrlWQuery = (url: string, w?: number, h?: number) =>
+  '/screenshot/img?' +
+  [w && `w=${w}w`, h && `h=${h}h`, `url=${url}`].filter(Boolean).join('&')
+
 const getScreenshot = async (src: string) => {
   const res = await fetch(src)
   const blob = await res.blob()

@@ -16,7 +16,7 @@
 
 [[redirects]]
   from = "/screenshot/*"
-  to = "https://sngrapi.netlify.app/image/:splat"
+  to = "https://sngrapi.netlify.app/img/"
   status = 200
   force = true
   headers = { X-From = "Netlify" }
