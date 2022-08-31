@@ -32,7 +32,10 @@ import Icon from '~icons/mdi/menu'
 </header>
 
 <style lang="scss">
+  @use '../../styles/fonts';
+
   .title {
+    @extend %heading;
     @apply btn btn-ghost normal-case text-2xl font-bold;
   }
 
