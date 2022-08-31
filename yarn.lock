@@ -46,10 +46,10 @@
     vscode-languageserver-types "^3.17.1"
     vscode-uri "^3.0.3"
 
-"@astrojs/markdown-remark@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-1.1.0.tgz#99e06d52ee3e2d7cdea82bb6655fa63b4aae173f"
-  integrity sha512-8PkcOFeMbAb+4PEC/YakTEtJ4TCGQ2n4M3R/XEAu17gsTZkjJMP+z9pbV5ye0b/+qrYZOlpjGSu8dA1ysPk5kg==
+"@astrojs/markdown-remark@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-1.1.1.tgz#8d07db28ab15a17f54fd2e260052216731932683"
+  integrity sha512-eOvrqejecgeRLUXOdBfb0VoMppe7J80TlazaDnu4tVDdTG4nyuspO0CTPr9nzt6rbW5iLIh4KEUUuOk+z8n8uQ==
   dependencies:
     "@astrojs/micromark-extension-mdx-jsx" "^1.0.3"
     "@astrojs/prism" "^1.0.0"
@@ -67,7 +67,7 @@
     remark-parse "^10.0.1"
     remark-rehype "^10.1.0"
     remark-smartypants "^2.0.0"
-    shiki "^0.10.1"
+    shiki "^0.11.1"
     unified "^10.1.2"
     unist-util-map "^3.1.1"
     unist-util-visit "^4.1.0"
@@ -102,10 +102,10 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/react@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-1.1.0.tgz#af6f4cdcfba39c6de89cfe6b6ba24abfd1669cd5"
-  integrity sha512-T9/mEE/9yO36X3QeqzQjGMFXRH0f3vcBC9Jhxb3oGm5NlKm2m9Sg9GR52fcCtLRVR3ihc8qAElgEmQAAUTZ3KQ==
+"@astrojs/react@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-1.1.1.tgz#cbd01a7ef32418b9fe58a00f5e615f1abe5420a4"
+  integrity sha512-IxER8rq6CFF5c5mmpNv1ZsF0bg/huOaKjtwcvdnPAjcZIatnMjLbRQ0deoYFHJSgYpgMt6Rz1i0g4oEsr1Lzfw==
   dependencies:
     "@babel/core" ">=7.0.0-0 <8.0.0"
     "@babel/plugin-transform-react-jsx" "^7.17.12"
@@ -873,14 +873,14 @@ astro-seo@^0.6.0:
   resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.6.0.tgz#d46f98baa929f2111dd702662806fa741a9ac02a"
   integrity sha512-nR+dJlAyQhX6s0oAmbBqPq3KCZax/zVAerFsclGiJQ2znOkS/7L+RGjziS4M9Q3OQxm3FMfqIKHp9Ns73Q81ww==
 
-astro@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.1.1.tgz#d1e1fd870e65fbece85562657a8133e028e40469"
-  integrity sha512-FTjjivWeJizYLidzBgiAAXzILptvT6ssvWodzSwT1mYm9kWiua2kzMk5r6E9KqB+okV4Z/OryxdhWJwmLD0G7g==
+astro@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.1.2.tgz#e89cb7107d713722fdfe4048e0c0f641ec9c1c89"
+  integrity sha512-btawnJ+MwkJbjLO0uSMrlYl71jsa6ljyXEXeeFitp9aqRo0sqH7JdTE0nh7MWsVMePXEvcJ88WOkEhW/FpRu/Q==
   dependencies:
     "@astrojs/compiler" "^0.23.4"
     "@astrojs/language-server" "^0.23.0"
-    "@astrojs/markdown-remark" "^1.1.0"
+    "@astrojs/markdown-remark" "^1.1.1"
     "@astrojs/telemetry" "^1.0.0"
     "@astrojs/webapi" "^1.0.0"
     "@babel/core" "^7.18.2"
@@ -921,7 +921,7 @@ astro@^1.1.1:
     resolve "^1.22.0"
     rollup "~2.77.0"
     semver "^7.3.7"
-    shiki "^0.10.1"
+    shiki "^0.11.1"
     sirv "^2.0.2"
     slash "^4.0.0"
     string-width "^5.1.2"
@@ -1065,9 +1065,9 @@ camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001370, caniuse-lite@^1.0.30001373:
-  version "1.0.30001383"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001383.tgz#aecf317ccd940690725ae3ae4f28293c5fb8050e"
-  integrity sha512-swMpEoTp5vDoGBZsYZX7L7nXHe6dsHxi9o6/LKf/f0LukVtnrxly5GVb/fWdCDTqi/yw6Km6tiJ0pmBacm0gbg==
+  version "1.0.30001385"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001385.tgz#51d5feeb60b831a5b4c7177f419732060418535c"
+  integrity sha512-MpiCqJGhBkHgpyimE9GWmZTnyHyEEM35u115bD3QBrXpjvL/JgcP8cUhKJshfmg4OtEHFenifcK5sZayEw5tvQ==
 
 ccount@^2.0.0:
   version "2.0.1"
@@ -1380,9 +1380,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.202:
-  version "1.4.233"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.233.tgz#aa142e45468bda111b88abc9cc59d573b75d6a60"
-  integrity sha512-ejwIKXTg1wqbmkcRJh9Ur3hFGHFDZDw1POzdsVrB2WZjgRuRMHIQQKNpe64N/qh3ZtH2otEoRoS+s6arAAuAAw==
+  version "1.4.237"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.237.tgz#c695c5fedc3bb48f04ba1b39470c5aef2aaafd84"
+  integrity sha512-vxVyGJcsgArNOVUJcXm+7iY3PJAfmSapEszQD1HbyPLl0qoCmNQ1o/EX3RI7Et5/88In9oLxX3SGF8J3orkUgA==
 
 emmet@^2.3.0:
   version "2.3.6"
@@ -2369,9 +2369,9 @@ jsonc-parser@^2.3.0:
   integrity sha512-H8jvkz1O50L3dMZCsLqiuB2tA7muqbSg1AtGEkN0leAqGjsUzDJir3Zwr02BhqdcITPg3ei3mZ+HjMocAknhhg==
 
 jsonc-parser@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.1.0.tgz#73b8f0e5c940b83d03476bc2e51a20ef0932615d"
-  integrity sha512-DRf0QjnNeCUds3xTjKlQQ3DpJD51GvDjJfnxUVWg6PZTo2otSm+slzNAxU/35hF8/oJIKoG9slq30JYOsF2azg==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"
+  integrity sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==
 
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.3"
@@ -3762,10 +3762,10 @@ sass-formatter@^0.7.2:
   dependencies:
     suf-log "^2.5.3"
 
-sass@^1.54.5:
-  version "1.54.5"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.5.tgz#93708f5560784f6ff2eab8542ade021a4a947b3a"
-  integrity sha512-p7DTOzxkUPa/63FU0R3KApkRHwcVZYC0PLnLm5iyZACyp15qSi32x7zVUhRdABAATmkALqgGrjCJAcWvobmhHw==
+sass@^1.54.7:
+  version "1.54.7"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.7.tgz#a93fb1690472b161fab8f4ab34a66a0f3000c478"
+  integrity sha512-3q7MQz7sCpVG6TLhUfZwGOcd2/sm2ghYN2JEdRjNiW04ILdvahdo9GuAs+bxsxZ3hDCKv+wUT5w0iFWGU0CxlA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -3832,14 +3832,14 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-shiki@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.10.1.tgz#6f9a16205a823b56c072d0f1a0bcd0f2646bef14"
-  integrity sha512-VsY7QJVzU51j5o1+DguUd+6vmCmZ5v/6gYu4vyYAhzjuNQU6P/vmSy4uQaOhvje031qQMiW0d2BwgMH52vqMng==
+shiki@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.11.1.tgz#df0f719e7ab592c484d8b73ec10e215a503ab8cc"
+  integrity sha512-EugY9VASFuDqOexOgXR18ZV+TbFrQHeCpEYaXamO+SZlsnT/2LxuLBX25GGtIrwaEVFXUAbUQ601SWE2rMwWHA==
   dependencies:
     jsonc-parser "^3.0.0"
     vscode-oniguruma "^1.6.1"
-    vscode-textmate "5.2.0"
+    vscode-textmate "^6.0.0"
 
 side-channel@^1.0.4:
   version "1.0.4"
@@ -4469,19 +4469,19 @@ vscode-languageserver@^8.0.1:
     vscode-languageserver-protocol "3.17.2"
 
 vscode-nls@^5.0.0, vscode-nls@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/vscode-nls/-/vscode-nls-5.1.0.tgz#443b301a7465d88c81c0f4e1914f9857f0dce1e4"
-  integrity sha512-37Ha44QrLFwR2IfSSYdOArzUvOyoWbOYTwQC+wS0NfqKjhW7s0WQ1lMy5oJXgSZy9sAiZS5ifELhbpXodeMR8w==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/vscode-nls/-/vscode-nls-5.2.0.tgz#3cb6893dd9bd695244d8a024bdf746eea665cc3f"
+  integrity sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==
 
 vscode-oniguruma@^1.6.1:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/vscode-oniguruma/-/vscode-oniguruma-1.6.2.tgz#aeb9771a2f1dbfc9083c8a7fdd9cccaa3f386607"
   integrity sha512-KH8+KKov5eS/9WhofZR8M8dMHWN2gTxjMsG4jd04YhpbPR91fUj7rYQ2/XjeHCJWbg7X++ApRIU9NUwM2vTvLA==
 
-vscode-textmate@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/vscode-textmate/-/vscode-textmate-5.2.0.tgz#01f01760a391e8222fe4f33fbccbd1ad71aed74e"
-  integrity sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==
+vscode-textmate@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/vscode-textmate/-/vscode-textmate-6.0.0.tgz#a3777197235036814ac9a92451492f2748589210"
+  integrity sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==
 
 vscode-uri@^2.1.2:
   version "2.1.2"
