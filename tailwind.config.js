@@ -9,6 +9,6 @@ module.exports = {
     require('@tailwindcss/typography', require('@tailwindcss/aspect-ratio')),
   ],
   daisyui: {
-    themes: ['black'],
+    themes: ['cmyk'],
   },
 }

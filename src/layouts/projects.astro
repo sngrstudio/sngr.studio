@@ -1,27 +1,26 @@
 ---
 import BaseLayout from './base.astro'
 import { SEO } from 'astro-seo'
+import { Picture } from '@astrojs/image/components'
+import probe from 'probe-image-size'
 
 const { frontmatter: fm } = Astro.props
+const { width, height } = await probe(fm.image)
 ---
 
 <BaseLayout>
   <SEO title={fm.title} slot="head" />
   <section>
-    <article class="prose prose-lg max-w-none">
+    <article class="prose prose-xl max-w-none">
       <h1>{fm.title}</h1>
-      <p class="__date">
-        <time datetime={fm.startDate}
-          >{
-            `Sejak ${new Date(fm.startDate).toLocaleDateString('id-ID', {
-              weekday: 'long',
-              day: 'numeric',
-              month: 'long',
-              year: 'numeric',
-            })}`
-          }
-        </time>
-      </p>
+      <div class="no-prose __imgbox">
+        <Picture
+          src={fm.image}
+          widths={[128, 256, 384, 512, 768]}
+          aspectRatio={width / height}
+          alt={fm.title}
+        />
+      </div>
       <slot />
     </article>
   </section>
@@ -31,7 +30,7 @@ const { frontmatter: fm } = Astro.props
   @use '../styles/fonts';
 
   section {
-    @apply max-w-screen-md px-4 mt-16 mx-auto;
+    @apply max-w-screen-md px-4 mt-16 mb-12 mx-auto;
   }
 
   h1 {
@@ -40,5 +39,9 @@ const { frontmatter: fm } = Astro.props
 
   .__date {
     @apply uppercase;
+  }
+
+  .__imgbox img {
+    @apply rounded-lg;
   }
 </style>

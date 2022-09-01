@@ -13,9 +13,12 @@
     "check": "prettier --check ."
   },
   "devDependencies": {
+    "@astrojs/image": "^0.4.0",
+    "@astrojs/mdx": "^0.11.0",
     "@astrojs/prefetch": "^0.0.7",
     "@astrojs/react": "^1.1.1",
     "@iconify-json/mdi": "^1.1.31",
+    "@iconify/json": "^2.1.101",
     "@svgr/core": "^6.3.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
@@ -30,6 +33,7 @@
     "postcss-font-magician": "^3.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.3",
+    "probe-image-size": "^7.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.54.7",
