@@ -1,9 +1,10 @@
-import type { FC } from 'react'
+import type { FC, PropsWithChildren } from 'react'
 import LoadingIcon from '~icons/mdi/loading'
+import ErrorIcon from '~icons/mdi/error'
 import { motion } from 'framer-motion'
-import style from './image.module.scss'
+import style from './screenshot.module.scss'
 
-const Loading: FC = () => (
+const State: FC<PropsWithChildren> = ({ children }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -17,12 +18,24 @@ const Loading: FC = () => (
         dangerouslySetInnerHTML={{ __html: '&nbsp;' }}
       />
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="animate-spin">
-          <LoadingIcon />
-        </span>
+        {children}
       </div>
     </div>
   </motion.div>
 )
 
-export default Loading
+export const Loading: FC = () => (
+  <State>
+    <span className="animate-spin">
+      <LoadingIcon />
+    </span>
+  </State>
+)
+
+export const Error: FC = () => (
+  <State>
+    <span>
+      <ErrorIcon />
+    </span>
+  </State>
+)

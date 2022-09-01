@@ -1,18 +1,19 @@
 import type { FC } from 'react'
-import Loading from './loading'
+import { Loading, Error } from './state'
 import { motion } from 'framer-motion'
 import useSWR from 'swr'
 import getScreenshot, { getScreenshotUrl } from '~/lib/get-screenshot'
-import style from './image.module.scss'
+import style from './screenshot.module.scss'
 
 export interface IHeroImage {
   image: string
 }
 
 const Image: FC<IHeroImage> = ({ image }) => {
-  const { data } = useSWR(getScreenshotUrl(image), getScreenshot)
+  const { data, error } = useSWR(getScreenshotUrl(image), getScreenshot)
 
   if (!data) return <Loading />
+  if (error) return <Error />
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}

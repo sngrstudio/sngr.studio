@@ -1,0 +1,11 @@
+---
+import Hero from '../react/hero/'
+import Screenshot from '../react/screenshot'
+
+const projectsData = await Astro.glob('../../pages/projects/*.mdx')
+const { link } = projectsData[0].frontmatter
+---
+
+<Hero>
+  <Screenshot image={link} client:idle />
+</Hero>
