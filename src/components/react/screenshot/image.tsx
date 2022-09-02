@@ -26,6 +26,7 @@ const ImageWrapper: FC<PropsWithChildren<IHeroImageWrapper>> = ({
         exit={{ opacity: 0, scale: 0.9 }}
         className={style.__window}
         key="heroImage"
+        rel="prefetch"
       >
         {children}
       </motion.a>
