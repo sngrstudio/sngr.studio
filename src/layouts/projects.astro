@@ -1,11 +1,9 @@
 ---
 import BaseLayout from './base.astro'
+import Image from '~/components/site/image.astro'
 import { SEO } from 'astro-seo'
-import { Picture } from '@astrojs/image/components'
-import probe from 'probe-image-size'
 
 const { frontmatter: fm } = Astro.props
-const { width, height } = await probe(fm.image)
 ---
 
 <BaseLayout>
@@ -13,14 +11,13 @@ const { width, height } = await probe(fm.image)
   <section>
     <article class="prose prose-xl max-w-none">
       <h1>{fm.title}</h1>
-      <div class="no-prose __imgbox">
-        <Picture
-          src={fm.image}
-          widths={[128, 256, 384, 512, 768]}
-          aspectRatio={width / height}
-          alt={fm.title}
-        />
-      </div>
+      {
+        fm.image && (
+          <div class="no-prose __imgbox">
+            <Image src={fm.image} alt={fm.title} eager={true} />
+          </div>
+        )
+      }
       <slot />
     </article>
   </section>
