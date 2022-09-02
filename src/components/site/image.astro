@@ -17,6 +17,6 @@ const { width, height } = await probe(src)
   alt={alt}
   widths={[128, 128 * 2, 128 * 3, 128 * 4, 128 * 5, 128 * 6]}
   aspectRatio={width / height}
-  eager={eager ? 'eager' : 'lazy'}
+  loading={eager ? 'eager' : 'lazy'}
   decoding="async"
 />
