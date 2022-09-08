@@ -1,0 +1,33 @@
+---
+import menu from './menu'
+---
+
+<section class="drawer drawer-end">
+  <input id="main-menu" type="checkbox" class="drawer-toggle" />
+  <section class="drawer-content">
+    <slot name="header" />
+    <slot />
+  </section>
+  <section class="drawer-side">
+    <label for="main-menu" class="drawer-overlay"></label>
+    <ul class="menu __sidebar_menu">
+      {
+        menu.map((item) => (
+          <li>
+            <a href={item.link} rel="prefetch">
+              <item.icon />
+              <span>{item.title}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</section>
+
+<style lang="scss">
+  .__sidebar_menu {
+    @apply min-w-[70vw] overflow-y-auto px-4 pt-[80px];
+    @apply bg-base-100;
+  }
+</style>

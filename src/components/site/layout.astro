@@ -1,0 +1,17 @@
+---
+import Drawer from './drawer.astro'
+import Header from '../common/header'
+---
+
+<Drawer>
+  <Header slot="header" />
+  <main class="__main">
+    <slot />
+  </main>
+</Drawer>
+
+<style lang="scss">
+  .__main {
+    @apply min-h-screen pt-[80px];
+  }
+</style>
