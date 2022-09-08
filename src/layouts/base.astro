@@ -1,7 +1,7 @@
 ---
 import '~/styles/global.scss'
 import Head from '~/components/site/head.astro'
-import Main from '~/components/site/main.astro'
+import Layout from '~/components/common/layout'
 ---
 
 <html lang="id">
@@ -9,8 +9,8 @@ import Main from '~/components/site/main.astro'
     <slot name="head" />
   </Head>
   <body>
-    <Main>
+    <Layout>
       <slot />
-    </Main>
+    </Layout>
   </body>
 </html>

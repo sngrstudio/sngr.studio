@@ -1,6 +1,0 @@
-@use '../../../styles/fonts';
-
-.h1 {
-  @extend %heading;
-  @apply text-4xl md:text-6xl font-extrabold text-left mb-6;
-}

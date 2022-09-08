@@ -4,6 +4,7 @@ import prefetch from '@astrojs/prefetch'
 import mdx from '@astrojs/mdx'
 import image from '@astrojs/image'
 import Icons from 'unplugin-icons/vite'
+import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +15,9 @@ export default defineConfig({
       Icons({
         compiler: 'jsx',
         jsx: 'react',
+        customCollections: {
+          'sngr-studio-brand': FileSystemIconLoader('./src/assets/icons'),
+        },
       }),
     ],
   },

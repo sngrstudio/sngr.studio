@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '~/layouts/base.astro'
-import Hero from '~/components/home/hero.astro'
 import { SEO } from 'astro-seo'
-import site from '~/lib/site'
+import site from '~/components/site/site'
 ---
 
 <BaseLayout>
@@ -11,5 +10,5 @@ import site from '~/lib/site'
     description={site.description}
     slot="head"
   />
-  <Hero screenshot="https://suraumadani.com" />
+  <h1>reboot!</h1>
 </BaseLayout>
