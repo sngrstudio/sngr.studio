@@ -4,7 +4,7 @@ import Chat from '~icons/mdi/chat'
 
 const menu = [
   {
-    title: 'Proyek',
+    title: 'Karya',
     link: '/projects',
     icon: Trophy,
   },
