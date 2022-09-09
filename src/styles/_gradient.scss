@@ -1,0 +1,15 @@
+%gradient-1 {
+  @apply bg-secondary bg-gradient-to-br from-primary to-secondary;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+%gradient-2 {
+  @apply bg-secondary bg-gradient-to-br from-secondary to-accent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

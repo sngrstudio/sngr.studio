@@ -17,6 +17,7 @@ export default defineConfig({
         jsx: 'react',
         customCollections: {
           'sngr-studio-brand': FileSystemIconLoader('./src/assets/icons'),
+          illustrations: FileSystemIconLoader('./src/assets/illustrations'),
         },
       }),
     ],

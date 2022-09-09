@@ -10,11 +10,11 @@ const Header: FC = () => {
       <nav className="navbar w-full">
         <div className="flex-1">
           <a href="/" rel="prefetch">
-            <site.logo.black className="w-max h-[36px]" />
+            <site.logo.color className="w-max h-[36px]" />
           </a>
         </div>
         <div className="flex-none hidden md:block">
-          <ul className="menu menu-horizontal">
+          <ul className="menu menu-horizontal text-secondary">
             {menu.map((item, i) => (
               <li key={`menu-${i}`}>
                 <a href={item.link} rel="prefetch">

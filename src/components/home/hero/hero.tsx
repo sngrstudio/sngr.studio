@@ -1,4 +1,5 @@
 import type { FC } from 'react'
+import Illustration from '~icons/illustrations/building-web'
 import style from './hero.module.scss'
 
 interface IHero {
@@ -11,7 +12,7 @@ const Hero: FC<IHero> = ({ slogan, description }) => {
     <section className={style.__section}>
       <div className={style.__container}>
         <div className={style.__screenshot}>
-          <img src="https://placekitten.com/800/600" />
+          <Illustration className="w-full h-full" />
         </div>
         <article className={style.__slogan_box}>
           <h1>{slogan}</h1>
