@@ -1,5 +1,6 @@
 @use './tw';
+@use './fonts';
 
 body {
-  font-family: 'Public Sans', system-ui, sans-serif;
+  @extend %body;
 }

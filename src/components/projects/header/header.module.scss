@@ -1,0 +1,12 @@
+@use '../../../styles/fonts';
+@use '../../../styles/gradient';
+
+.__section {
+  @extend %bg-gradient-2;
+  @apply min-h-[25vh] md:min-h-[40vh] mb-8;
+  @apply flex flex-col items-center justify-center;
+  > h1 {
+    @extend %heading;
+    @apply font-black text-base-100 text-4xl md:text-6xl xl:text-8xl;
+  }
+}

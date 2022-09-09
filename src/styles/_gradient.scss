@@ -1,15 +1,28 @@
-%gradient-1 {
-  @apply bg-secondary bg-gradient-to-br from-primary to-secondary;
+@mixin gradient($variant) {
+  @if $variant == 1 {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  } @else if $variant == 2 {
+    @apply bg-gradient-to-br from-secondary to-accent;
+  } @else {
+    @apply bg-gradient-to-br from-primary to-accent;
+  }
+}
+
+@mixin text-gradient($variant) {
+  @include gradient($variant);
+
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
-%gradient-2 {
-  @apply bg-secondary bg-gradient-to-br from-secondary to-accent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+@for $i from 1 through 3 {
+  %gradient-#{$i} {
+    @include text-gradient($i);
+  }
+
+  %bg-gradient-#{$i} {
+    @include gradient($i);
+  }
 }

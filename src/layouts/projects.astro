@@ -1,0 +1,27 @@
+---
+import BaseLayout from './base.astro'
+import ProjectHeader from '~/components/projects/header'
+import { SEO } from 'astro-seo'
+import site from '~/components/site/site'
+
+const { frontmatter: page } = Astro.props
+---
+
+<BaseLayout>
+  <SEO
+    title={`${page.title} \u2014 ${site.name}`}
+    description={site.description}
+    slot="head"
+  />
+
+  <article class="__article">
+    <ProjectHeader title={page.title} />
+    <slot />
+  </article>
+</BaseLayout>
+
+<style lang="scss">
+  .__article {
+    @apply pt-[80px];
+  }
+</style>
