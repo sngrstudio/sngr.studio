@@ -9,7 +9,7 @@ const Header: FC = () => {
     <header className={style.__header}>
       <nav className="navbar w-full">
         <div className="flex-1">
-          <a href="/" rel="prefetch">
+          <a href="/" rel="prefetch" aria-label="Beranda">
             <site.logo.color className="w-max h-[36px]" />
           </a>
         </div>
