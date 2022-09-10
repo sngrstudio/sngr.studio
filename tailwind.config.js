@@ -23,6 +23,19 @@ module.exports = {
           error: '#f44336',
         },
       },
+      {
+        madanians: {
+          primary: '#3388cb',
+          secondary: '#3cb7cc',
+          accent: '#fbb82c',
+          neutral: '#2f343c',
+          'base-100': '#ffffff',
+          info: '#3187ca',
+          success: '#44a375',
+          warning: '#c1933d',
+          error: '#f44336',
+        },
+      },
     ],
   },
 }

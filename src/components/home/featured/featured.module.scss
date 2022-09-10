@@ -1,0 +1,28 @@
+@use '../../../styles/fonts';
+@use '../../../styles/gradient';
+
+.__section {
+  @apply bg-primary-content;
+}
+
+.__container {
+  @apply flex flex-col gap-4 items-center justify-center;
+  @apply max-w-screen-md xl:max-w-screen-lg mx-auto h-full py-16 px-4 min-h-screen;
+}
+
+.__window {
+  @apply mockup-window bg-accent border-accent border-4;
+}
+
+.__title {
+  @extend %heading;
+  @apply font-black text-primary text-4xl md:text-6xl xl:text-7xl text-center;
+}
+
+.__slogan {
+  @apply text-xl xl:text-3xl text-center text-primary-focus;
+}
+
+.__buttons {
+  @apply flex flex-row gap-2;
+}

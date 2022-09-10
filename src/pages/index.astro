@@ -1,8 +1,15 @@
 ---
+import type { IProject } from '~/components/common/types/projects.type'
 import BaseLayout from '~/layouts/base.astro'
 import { SEO } from 'astro-seo'
 import site from '~/components/site/site'
 import Hero from '~/components/home/hero'
+import Featured, { Screenshot } from '~/components/home/featured'
+
+const projectsData = await Astro.glob<IProject>('./projects/*.mdx')
+const featured = projectsData
+  .filter((d) => !d.frontmatter.draft && d.frontmatter.featured)
+  .at(0)
 ---
 
 <BaseLayout>
@@ -12,4 +19,11 @@ import Hero from '~/components/home/hero'
     slot="head"
   />
   <Hero slogan={site.slogan} description={site.description} />
+  <Featured project={featured?.frontmatter} url={featured?.url}>
+    <Screenshot
+      url={featured?.frontmatter.link as string}
+      alt={featured?.frontmatter.title}
+      client:visible
+    />
+  </Featured>
 </BaseLayout>
