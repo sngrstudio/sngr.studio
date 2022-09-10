@@ -27,11 +27,19 @@ const Featured: FC<PropsWithChildren<IFeatured>> = ({
           {children}
         </a>
         <div className={style.__buttons}>
-          <a className="btn btn-accent md:btn-xl gap-1" href={url}>
+          <a
+            className="btn btn-accent md:btn-xl gap-1"
+            href={url}
+            rel="prefetch"
+          >
             <span>Ini Kisahnya</span>
             <RightArrow className="text-xl" />
           </a>
-          <a className="btn btn-accent md:btn-xl gap-1" href="/projects">
+          <a
+            className="btn btn-accent md:btn-xl gap-1"
+            href="/projects"
+            rel="prefetch"
+          >
             <span>Semua Karya</span>
             <RightArrow className="text-xl" />
           </a>
