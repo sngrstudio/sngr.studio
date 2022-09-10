@@ -3,7 +3,7 @@ import LogoColor from '~icons/sngr-studio-brand/text-color'
 
 const site = {
   name: 'SNGR Studio',
-  slogan: 'Persembahan terbaik, dari teknologi web terbaik.',
+  slogan: 'Persembahan terbaik, dari teknologi web terdepan.',
   description:
     'SNGR Studio membantu bisnis, UMKM, dan individual untuk meningkatkan presensi di dunia maya melalui tampilan website yang ringan, cepat dan aman.',
   logo: {
