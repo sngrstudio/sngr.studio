@@ -6,12 +6,12 @@
 }
 
 .__container {
-  @apply flex flex-col gap-4 items-center justify-center;
+  @apply flex flex-col gap-4 items-stretch justify-center;
   @apply max-w-screen-md xl:max-w-screen-lg mx-auto h-full py-16 px-4 min-h-screen;
 }
 
 .__window {
-  @apply mockup-window bg-accent border-accent border-4;
+  @apply mockup-window flex-1 bg-accent border-accent border-4;
 }
 
 .__title {
@@ -24,5 +24,5 @@
 }
 
 .__buttons {
-  @apply flex flex-row gap-2;
+  @apply flex flex-row gap-2 flex-wrap justify-center;
 }

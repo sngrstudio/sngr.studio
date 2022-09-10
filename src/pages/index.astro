@@ -7,9 +7,9 @@ import Hero from '~/components/home/hero'
 import Featured, { Screenshot } from '~/components/home/featured'
 
 const projectsData = await Astro.glob<IProject>('./projects/*.mdx')
-const featured = projectsData
-  .filter((d) => !d.frontmatter.draft && d.frontmatter.featured)
-  .at(0)
+const featured = projectsData.filter(
+  (d) => !d.frontmatter.draft && d.frontmatter.featured
+)
 ---
 
 <BaseLayout>
@@ -19,11 +19,15 @@ const featured = projectsData
     slot="head"
   />
   <Hero slogan={site.slogan} description={site.description} />
-  <Featured project={featured?.frontmatter} url={featured?.url}>
-    <Screenshot
-      url={featured?.frontmatter.link as string}
-      alt={featured?.frontmatter.title}
-      client:visible
-    />
-  </Featured>
+  {
+    featured.map((item) => (
+      <Featured project={item?.frontmatter} url={item?.url as string}>
+        <Screenshot
+          url={item?.frontmatter.link as string}
+          alt={item?.frontmatter.title}
+          client:visible
+        />
+      </Featured>
+    ))
+  }
 </BaseLayout>

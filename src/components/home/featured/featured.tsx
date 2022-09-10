@@ -16,18 +16,22 @@ const Featured: FC<PropsWithChildren<IFeatured>> = ({
   return (
     <section className={style.__section} data-theme={project.theme || ''}>
       <article className={style.__container}>
-        <span className="badge badge-accent font-bold">Karya SNGR Studio</span>
+        <div className="flex justify-center">
+          <span className="badge badge-accent font-bold">
+            Karya SNGR Studio
+          </span>
+        </div>
         <h2 className={style.__title}>{project.title}</h2>
         <p className={style.__slogan}>{project.slogan}</p>
         <a className={style.__window} href={url} rel="prefetch">
           {children}
         </a>
         <div className={style.__buttons}>
-          <a className="btn btn-accent btn-xl gap-1" href={url}>
+          <a className="btn btn-accent md:btn-xl gap-1" href={url}>
             <span>Ini Kisahnya</span>
             <RightArrow className="text-xl" />
           </a>
-          <a className="btn btn-accent btn-xl gap-1" href="/projects">
+          <a className="btn btn-accent md:btn-xl gap-1" href="/projects">
             <span>Semua Karya</span>
             <RightArrow className="text-xl" />
           </a>

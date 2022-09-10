@@ -36,6 +36,19 @@ module.exports = {
           error: '#f44336',
         },
       },
+      {
+        'jingga-keadilan': {
+          primary: '#a03200',
+          secondary: '#ff9a6b',
+          accent: '#FF5000',
+          neutral: '#19201f',
+          'base-100': '#faf9f8',
+          info: '#241c25',
+          success: '#7d9340',
+          warning: '#fa8208',
+          error: '#f44336',
+        },
+      },
     ],
   },
 }
