@@ -26,18 +26,18 @@ const Featured: FC<PropsWithChildren<IFeatured>> = ({
     {
       title: 'Ini Kisahnya',
       url: projectUrl,
-      icon: () => <RightArrow className="text-xl" />,
+      icon: RightArrow,
     },
     {
       title: 'Lihat Karya',
       url: projectLink,
-      icon: () => <RightArrow className="text-xl" />,
+      icon: RightArrow,
       newWindow: true,
     },
     {
       title: 'Semua Karya',
       url: '/projects',
-      icon: () => <RightArrow className="text-xl" />,
+      icon: RightArrow,
     },
   ]
 
@@ -64,7 +64,7 @@ const Featured: FC<PropsWithChildren<IFeatured>> = ({
               key={`btn-${i}`}
             >
               <span>{btn.title}</span>
-              <btn.icon />
+              <btn.icon className="text-xl" />
             </a>
           ))}
         </div>

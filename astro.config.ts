@@ -5,6 +5,7 @@ import mdx from '@astrojs/mdx'
 import image from '@astrojs/image'
 import Icons from 'unplugin-icons/vite'
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
+import yaml from '@modyfi/vite-plugin-yaml'
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
   integrations: [react(), prefetch(), mdx(), image()],
   vite: {
     plugins: [
+      yaml(),
       Icons({
         compiler: 'jsx',
         jsx: 'react',

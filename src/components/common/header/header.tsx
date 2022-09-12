@@ -62,7 +62,10 @@ const Header: FC = () => {
             </ul>
           </div>
           <div className="flex-none md:hidden">
-            <label className="btn btn-square btn-ghost" htmlFor="main-menu">
+            <label
+              className="btn btn-square btn-ghost text-accent"
+              htmlFor="main-menu"
+            >
               <MenuIcon />
             </label>
           </div>
