@@ -2,9 +2,15 @@
 import '~/styles/global.scss'
 import Head from '~/components/site/head.astro'
 import Layout from '~/components/site/layout.astro'
+
+export interface Props {
+  theme?: string
+}
+
+const { theme } = Astro.props as Props
 ---
 
-<html lang="id">
+<html lang="id" data-theme={theme || ''}>
   <Head>
     <slot name="head" />
   </Head>
