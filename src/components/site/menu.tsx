@@ -61,13 +61,13 @@ export const socialMenu: IMenu[] = [
 
 export const footerMenu: IMenu[] = [
   {
+    title: 'Tentang SNGR Studio',
+    link: '/about',
+  },
+  {
     title: 'Owner',
     link: '/radenpioneer',
     isExternal: true,
-  },
-  {
-    title: 'Legal',
-    link: '/legal',
   },
   {
     title: 'Atribusi',

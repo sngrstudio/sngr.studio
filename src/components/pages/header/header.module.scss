@@ -1,13 +1,18 @@
 @use '../../../styles/fonts';
-@use '../../../styles/gradient';
 
 .__section {
-  @extend %bg-gradient-4;
-  @apply min-h-[25vh] md:min-h-[40vh] pt-[80px] -mx-4 mb-8;
+  @apply min-h-[25vh] md:min-h-[40vh] pt-[80px] pb-12 -mx-4 mb-8;
   @apply flex flex-col items-center justify-center;
+  @apply bg-primary-content;
   > h1 {
     @extend %heading;
-    @apply font-black text-base-100 text-4xl md:text-6xl xl:text-8xl;
-    @apply text-accent text-center max-w-xl px-4;
+    @apply font-black text-primary text-4xl md:text-6xl xl:text-8xl;
+  }
+  > p {
+    @apply text-primary-focus text-xl md:text-3xl;
+  }
+  > h1,
+  p {
+    @apply text-center max-w-screen-md lg:max-w-screen-lg px-4;
   }
 }

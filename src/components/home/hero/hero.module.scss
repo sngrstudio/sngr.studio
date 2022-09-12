@@ -31,4 +31,5 @@
 .__screenshot {
   @extend %box;
   @apply justify-end md:justify-center;
+  @apply relative;
 }

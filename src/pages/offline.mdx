@@ -1,13 +1,13 @@
 ---
-title: 404 Not Found
+title: Offline
 layout: '~/layouts/error.astro'
 ---
 
-import NotFound from '~icons/illustrations/not-found'
+import ServerError from '~icons/illustrations/server-error'
 import AttributionLink from '~/components/common/attributions'
 
 <div className="relative">
-  <NotFound className="w-[240px] md:w-[480px] h-fit" />
+  <ServerError className="w-[240px] md:w-[480px] h-fit" />
   <AttributionLink
     url="/attributions/storyset"
     text="Web illustrations by Storyset"
@@ -16,4 +16,4 @@ import AttributionLink from '~/components/common/attributions'
 
 # { frontmatter.title }
 
-Cari apa ya? Sepertinya tidak ada di sini.
+Maaf, sepertinya Anda sedang offline. Coba sambung ke Wi-Fi terdekat atau beli paket kuota baru :)

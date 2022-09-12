@@ -6,7 +6,8 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
-    require('@tailwindcss/typography', require('@tailwindcss/aspect-ratio')),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
   ],
   daisyui: {
     themes: [

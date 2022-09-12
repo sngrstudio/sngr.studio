@@ -1,5 +1,6 @@
 import type { FC } from 'react'
 import Illustration from '~icons/illustrations/building-web'
+import AttributionLink from '~/components/common/attributions'
 import style from './hero.module.scss'
 
 interface IHero {
@@ -13,6 +14,10 @@ const Hero: FC<IHero> = ({ slogan, description }) => {
       <div className={style.__container}>
         <div className={style.__screenshot}>
           <Illustration className="w-full h-full" />
+          <AttributionLink
+            url="/attributions/storyset"
+            text="Web illustrations by Storyset"
+          />
         </div>
         <article className={style.__slogan_box}>
           <h1>{slogan}</h1>
