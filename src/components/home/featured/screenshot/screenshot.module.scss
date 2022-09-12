@@ -1,3 +1,7 @@
 .__state {
   @apply flex items-center justify-center text-accent-content absolute inset-0;
 }
+
+.__state_size {
+  @apply min-w-[280px] pb-[52.65%];
+}

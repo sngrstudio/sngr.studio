@@ -10,9 +10,10 @@ const State: FC<PropsWithChildren> = ({ children }) => (
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className={style.__state}
+      className="relative"
     >
-      {children}
+      <div className={style.__state_size}>&nbsp;</div>
+      <div className={style.__state}>{children}</div>
     </m.div>
   </LazyMotion>
 )

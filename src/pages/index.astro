@@ -21,7 +21,11 @@ const featured = projectsData.filter(
   <Hero slogan={site.slogan} description={site.description} />
   {
     featured.map((item) => (
-      <Featured project={item?.frontmatter} url={item?.url as string}>
+      <Featured
+        project={item?.frontmatter}
+        projectUrl={item?.url as string}
+        projectLink={item?.frontmatter.link as string}
+      >
         <Screenshot
           url={item?.frontmatter.link as string}
           alt={item?.frontmatter.title}
