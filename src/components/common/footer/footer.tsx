@@ -7,10 +7,9 @@ import style from './footer.module.scss'
 interface IGenerateMenu {
   title: string
   menus: IMenu[]
-  isExternal?: boolean
 }
 
-const GenerateMenu: FC<IGenerateMenu> = ({ title, menus, isExternal }) => (
+const GenerateMenu: FC<IGenerateMenu> = ({ title, menus }) => (
   <div>
     <h2 className="footer-title">{title}</h2>
     <ul className={style.__footer_links}>
@@ -19,8 +18,13 @@ const GenerateMenu: FC<IGenerateMenu> = ({ title, menus, isExternal }) => (
           <a
             href={menu.link}
             className="link link-hover"
-            rel={`${isExternal ? 'noreferrer noopener' : ''} prefetch`}
-            target={isExternal ? '_blank' : ''}
+            rel={[
+              menu.isExternal && 'noreferrer noopener',
+              !menu.noPrefetch && 'prefetch',
+            ]
+              .filter(Boolean)
+              .join(' ')}
+            target={menu.isExternal ? '_blank' : ''}
           >
             {menu.title}
           </a>
@@ -38,7 +42,7 @@ const Footer: FC = () => (
       <p>{site.legal?.name}</p>
     </div>
     <GenerateMenu title="Layanan Lainnya" menus={externalMenu} />
-    <GenerateMenu title="Sosial Media" menus={socialMenu} isExternal={true} />
+    <GenerateMenu title="Sosial Media" menus={socialMenu} />
     <GenerateMenu title="Lain-lain" menus={footerMenu} />
   </footer>
 )

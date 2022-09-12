@@ -1,0 +1,33 @@
+---
+import BaseLayout from './base.astro'
+import { SEO } from 'astro-seo'
+import site from '~/components/site/site'
+
+const { frontmatter: fm } = Astro.props
+---
+
+<BaseLayout>
+  <SEO title={`${fm.title} \u2014 ${site.name}`} noindex={true} slot="head" />
+  <article>
+    <slot />
+    <p class="btn btn-link">
+      <a href="/" rel="prefetch">Beranda</a>
+    </p>
+  </article>
+</BaseLayout>
+
+<style lang="scss">
+  @use '../styles/fonts';
+  @use '../styles/gradient';
+
+  article {
+    @apply min-h-screen pt-[80px] px-4;
+    @apply flex flex-col gap-2 items-center justify-center;
+    @apply text-center;
+    > :global(h1) {
+      @extend %heading;
+      @extend %gradient-2;
+      @apply font-black text-4xl md:text-6xl;
+    }
+  }
+</style>

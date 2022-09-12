@@ -1,0 +1,22 @@
+---
+title: 500 Server Error
+layout: '~/layouts/error.astro'
+---
+
+import ServerError from '~icons/illustrations/server-error'
+
+<div className="relative">
+  <ServerError className="w-[240px] md:w-[480px] h-fit" />
+  <a
+    href="/attributions/storyset"
+    className="absolute bottom-0 right-0 text-[6px] text-neutral-content"
+    rel="nofollow"
+    target="_blank"
+  >
+    Web illustrations by Storyset
+  </a>
+</div>
+
+# { frontmatter.title }
+
+Maaf, servernya bermasalah. Nanti boleh dicoba lagi.

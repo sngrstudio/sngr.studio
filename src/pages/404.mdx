@@ -1,0 +1,22 @@
+---
+title: 404 Not Found
+layout: '~/layouts/error.astro'
+---
+
+import NotFound from '~icons/illustrations/not-found'
+
+<div className="relative">
+  <NotFound className="w-[240px] md:w-[480px] h-fit" />
+  <a
+    href="/attributions/storyset"
+    className="absolute bottom-0 right-0 text-[6px] text-neutral-content"
+    rel="nofollow"
+    target="_blank"
+  >
+    Web illustrations by Storyset
+  </a>
+</div>
+
+# { frontmatter.title }
+
+Cari apa ya? Sepertinya tidak ada di sini.

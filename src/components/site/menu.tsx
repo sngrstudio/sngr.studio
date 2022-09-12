@@ -7,6 +7,8 @@ export interface IMenu {
   title: string
   link: string
   icon?: ElementType
+  isExternal?: boolean
+  noPrefetch?: boolean
 }
 
 const mainMenu: IMenu[] = [
@@ -31,6 +33,7 @@ export const externalMenu: IMenu[] = [
   {
     title: 'Screenshot',
     link: '/image-api',
+    isExternal: true,
   },
   {
     title: 'Pesantren & Sekolah Islam',
@@ -42,14 +45,17 @@ export const socialMenu: IMenu[] = [
   {
     title: 'Github',
     link: '/github',
+    isExternal: true,
   },
   {
     title: 'Instagram',
     link: '/instagram',
+    isExternal: true,
   },
   {
     title: 'Twitter',
     link: '/twitter',
+    isExternal: true,
   },
 ]
 
@@ -57,10 +63,15 @@ export const footerMenu: IMenu[] = [
   {
     title: 'Owner',
     link: '/radenpioneer',
+    isExternal: true,
   },
   {
     title: 'Legal',
     link: '/legal',
+  },
+  {
+    title: 'Atribusi',
+    link: '/attributions',
   },
   {
     title: 'Syarat dan Ketentuan',
@@ -73,10 +84,12 @@ export const footerMenu: IMenu[] = [
   {
     title: 'Umpan',
     link: '/rss',
+    noPrefetch: true,
   },
   {
     title: 'Peta Situs',
     link: '/sitemap',
+    noPrefetch: true,
   },
 ]
 
