@@ -7,16 +7,6 @@
   command = "yarn dev"
   autoLaunch = false
 
-[[plugins]]
-  package = "netlify-plugin-minify-html"
-    [plugins.inputs.minifierOptions]
-      collapseWhitespace = true
-      minifyJS = true
-      minifyURLs = true
-      processScripts = ["module"]
-      removeEmptyAttributes = true
-      removeComments = true
-
 # Build Processing 
 [build.processing]
   skip_processing = false

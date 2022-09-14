@@ -18,6 +18,8 @@
     "@astrojs/prefetch": "^0.0.7",
     "@astrojs/react": "^1.1.2",
     "@astrojs/sitemap": "^1.0.0",
+    "@fontsource/manrope": "^4.5.11",
+    "@fontsource/overpass": "^4.5.9",
     "@iconify/json": "^2.1.107",
     "@modyfi/vite-plugin-yaml": "^1.0.3",
     "@svgr/core": "^6.3.1",
