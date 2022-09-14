@@ -66,12 +66,12 @@ export const footerMenu: IMenu[] = [
   },
   {
     title: 'Owner',
-    link: '/radenpioneer',
+    link: '/owner',
     isExternal: true,
   },
   {
     title: 'Atribusi',
-    link: '/attributions',
+    link: '/atribusi',
   },
   {
     title: 'Syarat dan Ketentuan',
