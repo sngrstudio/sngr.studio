@@ -7,6 +7,11 @@
   command = "yarn dev"
   autoLaunch = false
 
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+  [plugins.inputs.minifierOptions]
+    collapseWhitespace = true
+
 # internal/resource rewrites & redirects
 [[redirects]]
   from = "/rss"
