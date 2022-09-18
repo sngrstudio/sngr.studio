@@ -7,24 +7,6 @@
   command = "yarn dev"
   autoLaunch = false
 
-# Build Processing 
-[build.processing]
-  skip_processing = false
-
-[build.processing.css]
-  bundle = true
-  minify = true
-
-[build.processing.js]
-  bundle = true
-  minify = true
-
-[build.processing.html]
-  pretty_urls = false
-  
-[build.processing.images]
-  compress = false
-
 # internal/resource rewrites & redirects
 [[redirects]]
   from = "/rss"
