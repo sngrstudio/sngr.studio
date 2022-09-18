@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import type { IMenu } from '~/components/site/menu'
 import site from '~/components/site/site'
+import StatusBadge from '~/components/site/status'
 import { externalMenu, socialMenu, footerMenu } from '~/components/site/menu'
 import style from './footer.module.scss'
 
@@ -39,7 +40,8 @@ const Footer: FC = () => (
     <div className={style.__company_box}>
       <site.logo.white className="w-max h-[48px]" />
       <h2>{site.name}</h2>
-      <p>{site.legal?.name}</p>
+      <p className="mb-8">{site.legal?.name}</p>
+      <StatusBadge />
     </div>
     <GenerateMenu title="Layanan Lainnya" menus={externalMenu} />
     <GenerateMenu title="Sosial Media" menus={socialMenu} />
