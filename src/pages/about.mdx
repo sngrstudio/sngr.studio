@@ -4,9 +4,7 @@ slogan: Persembahan terbaik dari teknologi web terdepan.
 layout: '~/layouts/pages.astro'
 ---
 
-import OutlinedLogo from '~icons/sngr-studio-brand/text-outline-colored'
-
-<OutlinedLogo className="w-full h-fit" />
+import { Screenshot } from '~/components/home/featured'
 
 SNGR Studio bermula dari project otodidak, dari belajar membuat website
 menggunakan HTML, CSS dan JavaScript. Seiring waktu, yang tadinya hanya
@@ -19,4 +17,41 @@ dalam mensukseskan Pilkada Serentak 2020 Kab. Kotawaringin Timur dengan
 membuat halaman website untuk salah seorang pasangan calon kandidat Bupati
 & Wakil Bupati Kab. Kotawaringin Timur.
 
--> gambar
+<div class="not-prose mockup-window bg-primary-content">
+  <Screenshot
+    url="https://kotimbercahaya4.netlify.app"
+    alt="Website calon kandidat Bupati & Wakil Bupati Kab. Kotawaringin Timur"
+    client:visible
+  />
+</div>
+
+Bagi kami, membuat website bukan sekedar tentang membuat halaman instan
+dengan konten seadanya. Website, bagi kami, adalah pintu gerbang menuju
+pengalaman terbaik dari layanan apapun yang Anda tawarkan.
+
+Oleh karena itu, semua website dan aplikasi kami dibuat dari nol, 100% coding.
+Basis layanan kami adalah aplikasi web berbasis JAMstack, yang merupakan
+standar industri yang saat ini sedang berkembang. Semua aplikasi kami wajib
+memenuhi uji Core Web Vitals, yang merupakan standar Google untuk
+pengalaman web terbaik.
+
+## Legal
+
+|                    |                                |
+| ------------------ | ------------------------------ |
+| **Nama Legal**     | PT Karya Muda Mentaya          |
+| **Badan Hukum**    | PT Perorangan                  |
+| **NIB**            | 0504220051477                  |
+| **SK Kemenkumham** | AHU-012904.AH.01.30.Tahun 2022 |
+| **NPWP**           | 63.857.368.3-712.000           |
+
+## Download Company Profile
+
+<div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-2 justify-center">
+  <a href="/about/slide" class="btn btn-primary" target="_blank">
+    Lihat Slide
+  </a>
+  <a href="/about/pdf" class="btn btn-primary" target="_blank">
+    Download PDF
+  </a>
+</div>
