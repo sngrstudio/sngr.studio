@@ -22,7 +22,7 @@
     "@fontsource/overpass": "^4.5.9",
     "@iconify/json": "^2.1.107",
     "@modyfi/vite-plugin-yaml": "^1.0.3",
-    "@svgr/core": "^6.3.1",
+    "@svgr/core": "^6.4.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^18.0.20",
