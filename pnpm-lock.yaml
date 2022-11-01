@@ -18,7 +18,7 @@ specifiers:
   astro-seo: 0.6.0
   autoprefixer: 10.4.12
   daisyui: 2.33.0
-  framer-motion: 7.6.1
+  framer-motion: 7.6.4
   npm-run-all: 4.1.5
   postcss: 8.4.18
   postcss-font-magician: 3.0.0
@@ -51,7 +51,7 @@ dependencies:
   astro-seo: 0.6.0
   autoprefixer: 10.4.12_postcss@8.4.18
   daisyui: 2.33.0_xkowlklhtk6sfvtndbucb3hfiy
-  framer-motion: 7.6.1_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.6.4_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.18
   postcss-font-magician: 3.0.0_postcss@8.4.18
   probe-image-size: 7.2.3
@@ -2516,8 +2516,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
 
-  /framer-motion/7.6.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-8US03IWJKrLoSb81l5OahNzB9Sv7Jo1RhIwUoTG/25BRUdO9lOqq/klsdZqNmNG0ua9IEJJQ8hkYpETJ4N6VSw==}
+  /framer-motion/7.6.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Ac3Bl9M45fS8A0ibOUnYMSCfjaCrFfWT0uh0/MZVm/DGWcr5IsRRinWRiVGABA9RGJgn4THehqcn235JVQkucQ==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
