@@ -27,7 +27,7 @@
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/typography": "0.5.7",
     "@types/react": "18.0.24",
-    "astro": "1.5.2",
+    "astro": "1.6.2",
     "astro-seo": "0.6.0",
     "autoprefixer": "10.4.13",
     "daisyui": "2.33.0",
