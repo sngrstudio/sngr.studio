@@ -16,7 +16,7 @@ specifiers:
   '@types/react': 18.0.24
   astro: 1.5.2
   astro-seo: 0.6.0
-  autoprefixer: 10.4.12
+  autoprefixer: 10.4.13
   daisyui: 2.33.0
   framer-motion: 7.6.4
   npm-run-all: 4.1.5
@@ -49,8 +49,8 @@ dependencies:
   '@types/react': 18.0.24
   astro: 1.5.2_sass@1.55.0
   astro-seo: 0.6.0
-  autoprefixer: 10.4.12_postcss@8.4.18
-  daisyui: 2.33.0_xkowlklhtk6sfvtndbucb3hfiy
+  autoprefixer: 10.4.13_postcss@8.4.18
+  daisyui: 2.33.0_lycaqaeny3mp632atgvyvqdgwe
   framer-motion: 7.6.4_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.18
   postcss-font-magician: 3.0.0_postcss@8.4.18
@@ -1396,15 +1396,15 @@ packages:
       - ts-node
     dev: false
 
-  /autoprefixer/10.4.12_postcss@8.4.18:
-    resolution: {integrity: sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q==}
+  /autoprefixer/10.4.13_postcss@8.4.18:
+    resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001425
+      caniuse-lite: 1.0.30001429
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1521,7 +1521,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001425
+      caniuse-lite: 1.0.30001429
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.9_browserslist@4.21.4
@@ -1563,8 +1563,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite/1.0.30001425:
-    resolution: {integrity: sha512-/pzFv0OmNG6W0ym80P3NtapU0QEiDS3VuYAZMGoLLqiC7f6FJFe1MjpQDREGApeenD9wloeytmVDj+JLXPC6qw==}
+  /caniuse-lite/1.0.30001429:
+    resolution: {integrity: sha512-511ThLu1hF+5RRRt0zYCf2U2yRr9GPF6m5y90SBCWsvSoYoW7yAGlv/elyPaNfvGCkp6kj/KFZWU0BMA69Prsg==}
     dev: false
 
   /ccount/2.0.1:
@@ -1768,13 +1768,13 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
-  /daisyui/2.33.0_xkowlklhtk6sfvtndbucb3hfiy:
+  /daisyui/2.33.0_lycaqaeny3mp632atgvyvqdgwe:
     resolution: {integrity: sha512-NviwGs9oC9NW7IEZiLexHtxkpzP38AKxb9GTUCqUa0qoU8NHKQGqJUzQWZwWSZakU57KsQLblFVe0xMhqw4TlA==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
     dependencies:
-      autoprefixer: 10.4.12_postcss@8.4.18
+      autoprefixer: 10.4.13_postcss@8.4.18
       color: 4.2.3
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.18

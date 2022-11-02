@@ -29,7 +29,7 @@
     "@types/react": "18.0.24",
     "astro": "1.5.2",
     "astro-seo": "0.6.0",
-    "autoprefixer": "10.4.12",
+    "autoprefixer": "10.4.13",
     "daisyui": "2.33.0",
     "framer-motion": "7.6.4",
     "postcss": "8.4.18",
