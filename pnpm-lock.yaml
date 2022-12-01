@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/image': 0.11.0
   '@astrojs/mdx': 0.11.5
-  '@astrojs/prefetch': 0.1.0
+  '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 1.2.1
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.12
@@ -36,7 +36,7 @@ specifiers:
 dependencies:
   '@astrojs/image': 0.11.0
   '@astrojs/mdx': 0.11.5_rollup@2.79.1
-  '@astrojs/prefetch': 0.1.0
+  '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 1.2.1_37skqhkcxztqmgv2tfnmpmt2jm
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.12
@@ -205,8 +205,8 @@ packages:
       vfile-message: 3.1.2
     dev: false
 
-  /@astrojs/prefetch/0.1.0:
-    resolution: {integrity: sha512-dm+VdR1bkv7ZHbvT9kQI2hIHF0jOMs1rWRc3J1bhdLRDJZpwxmcAy00p4Hdyom/j+JPiLeMIN/1/mmoEQt3eZQ==}
+  /@astrojs/prefetch/0.1.1:
+    resolution: {integrity: sha512-+XZcjivPHTo9thQshDWKnnORHJ1dE6odIzhmKHac2ptwla092eohkiJw7Y31+PYmuJkc3Jp+3AawuCvfqCnQ2Q==}
     dependencies:
       throttles: 1.0.1
     dev: false
