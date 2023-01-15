@@ -8,7 +8,7 @@ specifiers:
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.12
   '@fontsource/overpass': 4.5.10
-  '@iconify/json': 2.2.6
+  '@iconify/json': 2.2.7
   '@modyfi/vite-plugin-yaml': 1.0.4
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2
@@ -41,7 +41,7 @@ dependencies:
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.12
   '@fontsource/overpass': 4.5.10
-  '@iconify/json': 2.2.6
+  '@iconify/json': 2.2.7
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@2.79.1+vite@3.2.5
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
@@ -558,8 +558,8 @@ packages:
     resolution: {integrity: sha512-6psYByKRd00tmIMYDcfcHda/w1hxfyeLKoVTxzegKbPcGGyZ4si61wxO4MzAIQdMHWAPiXkAWE1BU7RH5+J4Lw==}
     dev: false
 
-  /@iconify/json/2.2.6:
-    resolution: {integrity: sha512-fRP5PwXvX0PAGne1/xHvd6zVYiHq9dQzdvhhxamwJuNjoIVRWNNP5y465NkxybzEX94kn2JnoULkA9kbZkXoqA==}
+  /@iconify/json/2.2.7:
+    resolution: {integrity: sha512-cWDwr+KE0KNSFmxrR0rvM5AmP4JmJWCZiyhFZ1bywwBJsrV/x+19bLbEAvmn4pmKKYWCAy4F9clpVWynYslzoQ==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
