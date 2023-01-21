@@ -21,7 +21,7 @@
     "@astrojs/sitemap": "1.0.0",
     "@fontsource/manrope": "4.5.13",
     "@fontsource/overpass": "4.5.11",
-    "@iconify/json": "2.2.9",
+    "@iconify/json": "2.2.10",
     "@modyfi/vite-plugin-yaml": "1.0.4",
     "@svgr/core": "6.5.1",
     "@tailwindcss/aspect-ratio": "0.4.2",
