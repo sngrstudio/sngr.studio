@@ -6,18 +6,18 @@ specifiers:
   '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 1.2.2
   '@astrojs/sitemap': 1.0.0
-  '@fontsource/manrope': 4.5.12
-  '@fontsource/overpass': 4.5.10
-  '@iconify/json': 2.2.7
+  '@fontsource/manrope': 4.5.13
+  '@fontsource/overpass': 4.5.11
+  '@iconify/json': 2.2.9
   '@modyfi/vite-plugin-yaml': 1.0.4
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2
   '@tailwindcss/typography': 0.5.9
-  '@types/react': 18.0.26
+  '@types/react': 18.0.27
   astro: 1.9.2
-  astro-seo: 0.6.1
+  astro-seo: 0.7.0
   autoprefixer: 10.4.13
-  daisyui: 2.46.1
+  daisyui: 2.47.0
   framer-motion: 7.10.3
   npm-run-all: 4.1.5
   postcss: 8.4.21
@@ -37,20 +37,20 @@ dependencies:
   '@astrojs/image': 0.12.1
   '@astrojs/mdx': 0.14.0_rollup@2.79.1
   '@astrojs/prefetch': 0.1.1
-  '@astrojs/react': 1.2.2_j73ffdj3ayc7vqt3u7eisg73ba
+  '@astrojs/react': 1.2.2_hsf6nyyg5jbxcnmsbjhp7j3ayi
   '@astrojs/sitemap': 1.0.0
-  '@fontsource/manrope': 4.5.12
-  '@fontsource/overpass': 4.5.10
-  '@iconify/json': 2.2.7
+  '@fontsource/manrope': 4.5.13
+  '@fontsource/overpass': 4.5.11
+  '@iconify/json': 2.2.9
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@2.79.1+vite@3.2.5
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
-  '@types/react': 18.0.26
+  '@types/react': 18.0.27
   astro: 1.9.2_sass@1.57.1
-  astro-seo: 0.6.1
+  astro-seo: 0.7.0
   autoprefixer: 10.4.13_postcss@8.4.21
-  daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
+  daisyui: 2.47.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   framer-motion: 7.10.3_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.21
   postcss-font-magician: 3.0.0_postcss@8.4.21
@@ -216,7 +216,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react/1.2.2_j73ffdj3ayc7vqt3u7eisg73ba:
+  /@astrojs/react/1.2.2_hsf6nyyg5jbxcnmsbjhp7j3ayi:
     resolution: {integrity: sha512-ab9fYvzkC74J7N+M3DWQuZgwu7sYjW0aLO3sEAdCX/jZZz+0BhrqS8m9QjtGJyQK/niF4tgJjpPfadopxKc56g==}
     engines: {node: ^14.18.0 || >=16.12.0}
     peerDependencies:
@@ -227,7 +227,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.6
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.19.6
-      '@types/react': 18.0.26
+      '@types/react': 18.0.27
       '@types/react-dom': 18.0.7
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -550,16 +550,16 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource/manrope/4.5.12:
-    resolution: {integrity: sha512-s2G9tvaG8+p4OcxbYH9KS7JpgC+Tz2q7GNJLdKQJ/L2DrQZs6e0ARDhcA3KTTU/sVIE6MRfNPXvds8DNoQgEZw==}
+  /@fontsource/manrope/4.5.13:
+    resolution: {integrity: sha512-UFN5DMGBp8nFpwhPQXfpSbsEm4OVISqUKQy+rA+pb1zYGoH+OGN1woKEND8VLx+pC7rY3nrPRCJvSuuOaNdW7Q==}
     dev: false
 
-  /@fontsource/overpass/4.5.10:
-    resolution: {integrity: sha512-6psYByKRd00tmIMYDcfcHda/w1hxfyeLKoVTxzegKbPcGGyZ4si61wxO4MzAIQdMHWAPiXkAWE1BU7RH5+J4Lw==}
+  /@fontsource/overpass/4.5.11:
+    resolution: {integrity: sha512-x6A3fpFQdaqZ7O6LKyoeKzfzxjZhnJw1I7Yf4D8xKO8GM4N+0P8Ch6jIVD/DAgDmlc3/us5ZZEuaxwHJGiAkMA==}
     dev: false
 
-  /@iconify/json/2.2.7:
-    resolution: {integrity: sha512-cWDwr+KE0KNSFmxrR0rvM5AmP4JmJWCZiyhFZ1bywwBJsrV/x+19bLbEAvmn4pmKKYWCAy4F9clpVWynYslzoQ==}
+  /@iconify/json/2.2.9:
+    resolution: {integrity: sha512-R6a+izCJRPVAv/KR6QARNQwiKh4BiGYaIQUqLwmbI7m9gC1I5JoniT7F63jlic9CfRnUXlgxNEe6lpfh/wAA3Q==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
@@ -1060,11 +1060,11 @@ packages:
   /@types/react-dom/18.0.7:
     resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
     dependencies:
-      '@types/react': 18.0.26
+      '@types/react': 18.0.27
     dev: false
 
-  /@types/react/18.0.26:
-    resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
+  /@types/react/18.0.27:
+    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -1220,8 +1220,8 @@ packages:
     hasBin: true
     dev: false
 
-  /astro-seo/0.6.1:
-    resolution: {integrity: sha512-eszmxiycjfLcmoRyB8x5lCrWAwcSHs1i5riR1a5JbyJI8OQAl9tn1JvWFRuZvNH483CFdfNCczirnc805t/soA==}
+  /astro-seo/0.7.0:
+    resolution: {integrity: sha512-G7zJUr4lfKLeqfWx2g5rfuBsOsIOfqxIOqErQfrMsMchDFfLFxNKAuW8yAo8hynJJwBvtGyS/vOXgGdMVVCFrA==}
     dev: false
 
   /astro/1.9.2_sass@1.57.1:
@@ -1656,8 +1656,8 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
-  /daisyui/2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-i59+nLuzzPAVOhNhot3KLtt6stfYeCIPXs9uiLcpXjykpqxHfBA3W6hQWOUWPMwfqhyQd0WKub3sydtPGjzLtA==}
+  /daisyui/2.47.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-svZpXKldtHjXTEdj/lu2n7b+EQJSatqvmVB59k4dhCDOYUhUZ3jtGuPrgOJlPysHhDjxjCRWWug/fgV5e8tc/w==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
