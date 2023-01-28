@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/image': 0.12.1
-  '@astrojs/mdx': 0.14.0
+  '@astrojs/image': 0.13.0
+  '@astrojs/mdx': 0.15.1
   '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 1.2.2
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.13
   '@fontsource/overpass': 4.5.11
-  '@iconify/json': 2.2.10
+  '@iconify/json': 2.2.13
   '@modyfi/vite-plugin-yaml': 1.0.4
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2
@@ -17,13 +17,13 @@ specifiers:
   astro: 1.9.2
   astro-seo: 0.7.0
   autoprefixer: 10.4.13
-  daisyui: 2.47.0
+  daisyui: 2.49.0
   framer-motion: 7.10.3
   npm-run-all: 4.1.5
   postcss: 8.4.21
   postcss-font-magician: 3.0.0
   prettier: 2.8.3
-  prettier-plugin-astro: 0.7.2
+  prettier-plugin-astro: 0.8.0
   probe-image-size: 7.2.3
   react: 18.2.0
   react-dom: 18.2.0
@@ -31,17 +31,17 @@ specifiers:
   sass: 1.57.1
   swr: 1.3.0
   tailwindcss: 3.2.4
-  unplugin-icons: 0.15.1
+  unplugin-icons: 0.15.2
 
 dependencies:
-  '@astrojs/image': 0.12.1
-  '@astrojs/mdx': 0.14.0_rollup@2.79.1
+  '@astrojs/image': 0.13.0_astro@1.9.2
+  '@astrojs/mdx': 0.15.1_astro@1.9.2+rollup@2.79.1
   '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 1.2.2_hsf6nyyg5jbxcnmsbjhp7j3ayi
   '@astrojs/sitemap': 1.0.0
   '@fontsource/manrope': 4.5.13
   '@fontsource/overpass': 4.5.11
-  '@iconify/json': 2.2.10
+  '@iconify/json': 2.2.13
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@2.79.1+vite@3.2.5
   '@svgr/core': 6.5.1
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
@@ -50,7 +50,7 @@ dependencies:
   astro: 1.9.2_sass@1.57.1
   astro-seo: 0.7.0
   autoprefixer: 10.4.13_postcss@8.4.21
-  daisyui: 2.47.0_gbtt6ss3tbiz4yjtvdr6fbrj44
+  daisyui: 2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   framer-motion: 7.10.3_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.21
   postcss-font-magician: 3.0.0_postcss@8.4.21
@@ -61,12 +61,12 @@ dependencies:
   sass: 1.57.1
   swr: 1.3.0_react@18.2.0
   tailwindcss: 3.2.4_postcss@8.4.21
-  unplugin-icons: 0.15.1_@svgr+core@6.5.1
+  unplugin-icons: 0.15.2_@svgr+core@6.5.1
 
 devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.8.3
-  prettier-plugin-astro: 0.7.2
+  prettier-plugin-astro: 0.8.0
 
 packages:
 
@@ -95,23 +95,29 @@ packages:
 
   /@astrojs/compiler/0.31.3:
     resolution: {integrity: sha512-WbA05QH5xkdaJ3XtzDuYOjtqsip2InW5rk156sSdaHs5qN2NroUHbzWZthHJwmNAAjQSGXVIj+O6jQj81zzX/Q==}
+    dev: false
 
-  /@astrojs/image/0.12.1:
-    resolution: {integrity: sha512-7pBUPCw7/FPwfEntx+mGjhdwpaWXNHwRVcTK71rpf+c2yb8iIesRS9r26U7lGozTzXUROh1y1ftA82ziuqYF6Q==}
+  /@astrojs/compiler/1.0.1:
+    resolution: {integrity: sha512-77aacobLKcL98NmhK3OBS5EHIrX9gs1ckB/vGSIdkVZuB7u51V4jh05I6W0tSvG7/86tALv6QtHTRZ8rLhFTbQ==}
+    dev: true
+
+  /@astrojs/image/0.13.0_astro@1.9.2:
+    resolution: {integrity: sha512-18IlEsb/mau4ji9sR7+JVPFJHtgIk7Qh/Ol+Hh/JNcPn/oMrjP6FMU3VrNHPy5Ltvw1DyzkDV4wu+jYKU/V0Hw==}
     peerDependencies:
+      astro: ^2.0.0
       sharp: '>=0.31.0'
     peerDependenciesMeta:
       sharp:
         optional: true
     dependencies:
       '@altano/tiny-async-pool': 1.0.2
+      astro: 1.9.2_sass@1.57.1
       http-cache-semantics: 4.1.0
       image-size: 1.0.2
       kleur: 4.1.5
-      magic-string: 0.25.9
+      magic-string: 0.27.0
       mime: 3.0.0
       slash: 4.0.0
-      web-streams-polyfill: 3.2.1
     dev: false
 
   /@astrojs/language-server/0.28.3:
@@ -163,15 +169,38 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx/0.14.0_rollup@2.79.1:
-    resolution: {integrity: sha512-lmNh/7CeQmdZ0OCbnDnoDxQTKWleFdlT5YkjsutGIOhabY0xgCcWwb1Rbs/9m4vvTdCkp9zsZdRzUKEPFPbcsA==}
-    engines: {node: ^14.18.0 || >=16.12.0}
+  /@astrojs/markdown-remark/2.0.1_astro@1.9.2:
+    resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
+    peerDependencies:
+      astro: ^2.0.2
     dependencies:
-      '@astrojs/markdown-remark': 1.2.0
-      '@astrojs/prism': 1.0.2
+      '@astrojs/prism': 2.0.0
+      astro: 1.9.2_sass@1.57.1
+      github-slugger: 1.4.0
+      import-meta-resolve: 2.1.0
+      rehype-raw: 6.1.1
+      rehype-stringify: 9.0.3
+      remark-gfm: 3.0.1
+      remark-parse: 10.0.1
+      remark-rehype: 10.1.0
+      remark-smartypants: 2.0.0
+      shiki: 0.11.1
+      unified: 10.1.2
+      unist-util-visit: 4.1.1
+      vfile: 5.3.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@astrojs/mdx/0.15.1_astro@1.9.2+rollup@2.79.1:
+    resolution: {integrity: sha512-RzrJ2vq+XnAtqvhRdIeONYBINFEWetXnfAqiB2V4s/FB/jd+8y9fSOtBtGpWCGpRZfidtMYPIiQ/damz0yJxVA==}
+    engines: {node: '>=16.12.0'}
+    dependencies:
+      '@astrojs/markdown-remark': 2.0.1_astro@1.9.2
+      '@astrojs/prism': 2.0.0
       '@mdx-js/mdx': 2.1.3
       '@mdx-js/rollup': 2.1.3_rollup@2.79.1
-      acorn: 8.8.0
+      acorn: 8.8.1
       es-module-lexer: 0.10.5
       estree-util-visit: 1.2.0
       github-slugger: 1.4.0
@@ -185,6 +214,7 @@ packages:
       unist-util-visit: 4.1.1
       vfile: 5.3.5
     transitivePeerDependencies:
+      - astro
       - rollup
       - supports-color
     dev: false
@@ -212,6 +242,13 @@ packages:
   /@astrojs/prism/1.0.2:
     resolution: {integrity: sha512-o3cUVoAuALDqdN5puNlsN2eO4Yi1kDh68YO8V7o6U4Ts+J/mMayzlJ7JsgYAmob0xrf/XnADVgu8khfMv/w3uA==}
     engines: {node: ^14.18.0 || >=16.12.0}
+    dependencies:
+      prismjs: 1.29.0
+    dev: false
+
+  /@astrojs/prism/2.0.0:
+    resolution: {integrity: sha512-YgeoeEPqsxaEpg0rwe/bUq3653LqSQnMjrLlpYwrbQQMQQqz6Y5yXN+RX3SfLJ6ppNb4+Fu2+Z49EXjk48Ihjw==}
+    engines: {node: '>=16.12.0'}
     dependencies:
       prismjs: 1.29.0
     dev: false
@@ -558,8 +595,8 @@ packages:
     resolution: {integrity: sha512-x6A3fpFQdaqZ7O6LKyoeKzfzxjZhnJw1I7Yf4D8xKO8GM4N+0P8Ch6jIVD/DAgDmlc3/us5ZZEuaxwHJGiAkMA==}
     dev: false
 
-  /@iconify/json/2.2.10:
-    resolution: {integrity: sha512-WaAHE6+o2YssA768FRx0a6FdJnW4jYMrVw6eXA8iwucoM+abaGMwxaGderlGS/kovFXCHyV1vViJgW12BPErcg==}
+  /@iconify/json/2.2.13:
+    resolution: {integrity: sha512-TgTGzEhU2o0gGrkke3hVbkVtZB8EcbCdNR4X6ZbXJsApMuFghS4s+yuEbGHw+mMa3sp40L5qRi7wFU6Q47ysfw==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
@@ -569,8 +606,8 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: false
 
-  /@iconify/utils/2.0.11:
-    resolution: {integrity: sha512-oEBZkHpkgySHcMZi80ycoJ+ZdLoJhmbN0+gUK8qNPY79ndus8fBHKPyjjwz5kIvr5U9yiym+xBTTnZOB3m5/Pw==}
+  /@iconify/utils/2.1.0:
+    resolution: {integrity: sha512-ouXv1hQfOKq4k3wxQ2OJBYQ2gXBMeFoUCIiORmuUVUNlSq9oOTzQBF3jpFRb0+/P0bnV+RIoHcbZKufZTlJ16g==}
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.2
@@ -1131,12 +1168,6 @@ packages:
     hasBin: true
     dev: false
 
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: false
-
   /acorn/8.8.1:
     resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
@@ -1656,8 +1687,8 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
-  /daisyui/2.47.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-svZpXKldtHjXTEdj/lu2n7b+EQJSatqvmVB59k4dhCDOYUhUZ3jtGuPrgOJlPysHhDjxjCRWWug/fgV5e8tc/w==}
+  /daisyui/2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-+hEFMupi/7rqkAH4d3iBWj1TXRq73V3PrkJ3HiDqFuQgMoE1/UQOgMoeqaHa3r4IRo4fjMNauwHBA17qT0YSIA==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -3344,12 +3375,6 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /magic-string/0.25.9:
-    resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
-    dependencies:
-      sourcemap-codec: 1.4.8
-    dev: false
-
   /magic-string/0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
     engines: {node: '>=12'}
@@ -4439,6 +4464,17 @@ packages:
       prettier: 2.8.3
       sass-formatter: 0.7.5
       synckit: 0.8.4
+    dev: false
+
+  /prettier-plugin-astro/0.8.0:
+    resolution: {integrity: sha512-kt9wk33J7HvFGwFaHb8piwy4zbUmabC8Nu+qCw493jhe96YkpjscqGBPy4nJ9TPy9pd7+kEx1zM81rp+MIdrXg==}
+    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
+    dependencies:
+      '@astrojs/compiler': 1.0.1
+      prettier: 2.8.3
+      sass-formatter: 0.7.5
+      synckit: 0.8.4
+    dev: true
 
   /prettier/2.8.3:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
@@ -5186,11 +5222,6 @@ packages:
     engines: {node: '>= 8'}
     dev: false
 
-  /sourcemap-codec/1.4.8:
-    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-    deprecated: Please use @jridgewell/sourcemap-codec instead
-    dev: false
-
   /space-separated-tokens/2.0.1:
     resolution: {integrity: sha512-ekwEbFp5aqSPKaqeY1PGrlGQxPNaq+Cnx4+bE2D8sciBQrHpbwoBbawqTN2+6jPs9IdWxxiUcN0K2pkczD3zmw==}
     dev: false
@@ -5602,8 +5633,8 @@ packages:
       unist-util-visit-parents: 5.1.1
     dev: false
 
-  /unplugin-icons/0.15.1_@svgr+core@6.5.1:
-    resolution: {integrity: sha512-d4Gc8A4qIJYIXKueltTwoHfR3Cxsdfnmz8lSN5dsITEyai5tdb0uWpbQkn3j9HUlLDSB1ybdQIf5CItxJT3UDw==}
+  /unplugin-icons/0.15.2_@svgr+core@6.5.1:
+    resolution: {integrity: sha512-oWTTdLMuqfEYfZcko+KZHDEOIsqT4OeyJB1e4U7luCOo9gto/JLyHkqfbqjmjkjdQqA3DNHS18WOKh5esqQM5g==}
     peerDependencies:
       '@svgr/core': '>=5.5.0'
       '@vue/compiler-sfc': ^3.0.2 || ^2.7.0
@@ -5621,7 +5652,7 @@ packages:
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.2
-      '@iconify/utils': 2.0.11
+      '@iconify/utils': 2.1.0
       '@svgr/core': 6.5.1
       debug: 4.3.4
       kolorist: 1.6.0
