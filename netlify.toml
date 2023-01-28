@@ -7,11 +7,6 @@
   command = "pnpm run dev"
   autoLaunch = false
 
-[[plugins]]
-  package = "netlify-plugin-minify-html"
-  [plugins.inputs.minifierOptions]
-    collapseWhitespace = true
-
 # internal/resource rewrites & redirects
 [[redirects]]
   from = "/rss"
@@ -46,7 +41,7 @@
 # all external redirects starts here
 [[redirects]]
   from = "/radenpioneer"
-  to = "https://radenpioneer.netlify.app"
+  to = "https://radenpioneer.blog"
   status = 301
   force = true
 
