@@ -17,7 +17,7 @@
     "@astrojs/image": "0.13.0",
     "@astrojs/mdx": "0.15.1",
     "@astrojs/prefetch": "0.1.1",
-    "@astrojs/react": "1.2.2",
+    "@astrojs/react": "2.0.1",
     "@astrojs/sitemap": "1.0.0",
     "@fontsource/manrope": "4.5.13",
     "@fontsource/overpass": "4.5.11",
