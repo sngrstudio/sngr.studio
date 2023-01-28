@@ -9,6 +9,10 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 import yaml from '@modyfi/vite-plugin-yaml'
 
 // https://astro.build/config
+import compress from 'astro-compress'
+import critters from 'astro-critters'
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://sngr.studio',
   integrations: [
@@ -26,6 +30,8 @@ export default defineConfig({
         'https://sngr.studio/owner',
       ],
     }),
+    compress(),
+    critters(),
   ],
   vite: {
     plugins: [
