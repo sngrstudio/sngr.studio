@@ -14,14 +14,14 @@
     "check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/image": "0.12.1",
-    "@astrojs/mdx": "0.14.0",
+    "@astrojs/image": "0.13.0",
+    "@astrojs/mdx": "0.15.1",
     "@astrojs/prefetch": "0.1.1",
     "@astrojs/react": "1.2.2",
     "@astrojs/sitemap": "1.0.0",
     "@fontsource/manrope": "4.5.13",
     "@fontsource/overpass": "4.5.11",
-    "@iconify/json": "2.2.10",
+    "@iconify/json": "2.2.13",
     "@modyfi/vite-plugin-yaml": "1.0.4",
     "@svgr/core": "6.5.1",
     "@tailwindcss/aspect-ratio": "0.4.2",
@@ -30,7 +30,7 @@
     "astro": "1.9.2",
     "astro-seo": "0.7.0",
     "autoprefixer": "10.4.13",
-    "daisyui": "2.47.0",
+    "daisyui": "2.49.0",
     "framer-motion": "7.10.3",
     "postcss": "8.4.21",
     "postcss-font-magician": "3.0.0",
@@ -41,11 +41,11 @@
     "sass": "1.57.1",
     "swr": "1.3.0",
     "tailwindcss": "3.2.4",
-    "unplugin-icons": "0.15.1"
+    "unplugin-icons": "0.15.2"
   },
   "devDependencies": {
     "npm-run-all": "4.1.5",
     "prettier": "2.8.3",
-    "prettier-plugin-astro": "0.7.2"
+    "prettier-plugin-astro": "0.8.0"
   }
 }
