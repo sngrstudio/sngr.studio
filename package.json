@@ -33,7 +33,7 @@
     "astro-seo": "0.7.1",
     "autoprefixer": "10.4.13",
     "daisyui": "2.51.2",
-    "framer-motion": "8.5.5",
+    "framer-motion": "10.3.2",
     "postcss": "8.4.21",
     "postcss-font-magician": "3.0.0",
     "probe-image-size": "7.2.3",
