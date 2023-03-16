@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './base.astro'
+import Icons from '../site/icons.astro'
 
 import '@fontsource/overpass/300.css'
 import '@fontsource/overpass/700.css'
@@ -11,6 +12,7 @@ import '~/styles/global.scss'
 
 <BaseLayout>
   <Fragment slot="head">
+    <Icons />
     <slot name="head" />
   </Fragment>
   <main class="container">
