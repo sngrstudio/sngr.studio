@@ -1,6 +1,1 @@
-@use './tw';
-@use './fonts';
-
-body {
-  @extend %body;
-}
+@use '../../node_modules/@picocss/pico/scss/pico.slim.scss';

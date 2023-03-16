@@ -1,6 +1,6 @@
 image:
-  file: .gitpod.dockerfile
+  file: .gitpod.Dockerfile
 
 tasks:
   - init: pnpm install
-  - command: ntl dev
+    command: ntl dev

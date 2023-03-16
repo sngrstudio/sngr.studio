@@ -1,0 +1,57 @@
+---
+import Layout from '~/components/layouts/layout.astro'
+
+import { ReactComponent as ConstructionIllustration } from '~/assets/svg/construction.svg'
+import { ReactComponent as SNGRandCoLogo } from '~/assets/svg/sngrco.svg'
+import { SEO } from 'astro-seo'
+
+const page = {
+  title: 'Under Construction',
+  content:
+    'Situs web kami sedang dalam proses pembangunan dan akan segera hadir. Kami mohon maaf atas ketidaknyamanan ini dan berterima kasih atas kesabaran Anda.',
+}
+---
+
+<Layout>
+  <Fragment slot="head">
+    <SEO title={page.title} description={page.content} />
+  </Fragment>
+  <section>
+    <article>
+      <ConstructionIllustration
+        style={{ maxWidth: '768px', maxHeight: '400px', flex: 1 }}
+      />
+      <h1>{page.title}</h1>
+      <p>{page.content}</p>
+      <SNGRandCoLogo style={{ maxWidth: '100%', maxHeight: '35px' }} />
+    </article>
+  </section>
+</Layout>
+
+<style lang="scss">
+  section {
+    min-height: 85dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1,
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+</style>
+
+<!-- <a href="https://storyset.com/transport">Transport illustrations by Storyset</a> -->

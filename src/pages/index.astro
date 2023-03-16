@@ -1,37 +1,7 @@
 ---
-import type { IProject } from '~/components/common/types/projects.type'
-import BaseLayout from '~/layouts/base.astro'
-import { SEO } from 'astro-seo'
-import site from '~/components/site/site'
-import Hero from '~/components/home/hero'
-import Featured, { Screenshot } from '~/components/home/featured'
-
-const projectsData = await Astro.glob<IProject>('./projects/*.mdx')
-const featured = projectsData.filter(
-  (d) => !d.frontmatter.draft && d.frontmatter.featured
-)
+import Layout from '~/components/layouts/layout.astro'
 ---
 
-<BaseLayout>
-  <SEO
-    title={`${site.name} \u2014 ${site.slogan}`}
-    description={site.description}
-    slot="head"
-  />
-  <Hero slogan={site.slogan} description={site.description} />
-  {
-    featured.map((item) => (
-      <Featured
-        project={item?.frontmatter}
-        projectUrl={item?.url as string}
-        projectLink={item?.frontmatter.link as string}
-      >
-        <Screenshot
-          url={item?.frontmatter.link as string}
-          alt={item?.frontmatter.title}
-          client:visible
-        />
-      </Featured>
-    ))
-  }
-</BaseLayout>
+<Layout>
+  <h1>Sastronegoro & Co.</h1>
+</Layout>
