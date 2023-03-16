@@ -6,3 +6,9 @@
   framework = "astro"
   command = "pnpm run dev"
   autoLaunch = false
+
+[[redirects]]
+  from = "/"
+  to = "/under-construction"
+  status = 301
+  force = true

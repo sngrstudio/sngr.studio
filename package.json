@@ -32,7 +32,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.59.2",
-    "unplugin-icons": "0.15.3"
+    "unplugin-icons": "0.15.3",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",

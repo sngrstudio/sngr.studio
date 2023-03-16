@@ -7,6 +7,7 @@ import critters from 'astro-critters'
 
 import Icons from 'unplugin-icons/vite'
 import yaml from '@modyfi/vite-plugin-yaml'
+import svgr from 'vite-plugin-svgr'
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
   vite: {
     plugins: [
       yaml(),
+      svgr(),
       Icons({
         compiler: 'jsx',
         jsx: 'react',
@@ -22,6 +24,6 @@ export default defineConfig({
     ],
   },
   experimental: {
-    assets: true
-  }
+    assets: true,
+  },
 })

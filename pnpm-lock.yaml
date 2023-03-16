@@ -22,6 +22,7 @@ specifiers:
   sass: 1.59.2
   typescript: ^4.9.5
   unplugin-icons: 0.15.3
+  vite-plugin-svgr: ^2.4.0
 
 dependencies:
   '@astrojs/mdx': 0.17.2_astro@2.1.2+rollup@3.17.1
@@ -42,6 +43,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   sass: 1.59.2
   unplugin-icons: 0.15.3_@svgr+core@6.5.1
+  vite-plugin-svgr: 2.4.0_rollup@3.17.1+vite@4.1.2
 
 devDependencies:
   '@types/node': 18.13.0
@@ -5017,6 +5019,19 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.2
       vfile-message: 3.1.3
+    dev: false
+
+  /vite-plugin-svgr/2.4.0_rollup@3.17.1+vite@4.1.2:
+    resolution: {integrity: sha512-q+mJJol6ThvqkkJvvVFEndI4EaKIjSI0I3jNFgSoC9fXAz1M7kYTVUin8fhUsFojFDKZ9VHKtX6NXNaOLpbsHA==}
+    peerDependencies:
+      vite: ^2.6.0 || 3 || 4
+    dependencies:
+      '@rollup/pluginutils': 5.0.2_rollup@3.17.1
+      '@svgr/core': 6.5.1
+      vite: 4.1.2_ogh2wwho6udthbgvzgsr4xoony
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: false
 
   /vite/4.1.2_ogh2wwho6udthbgvzgsr4xoony:
