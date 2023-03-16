@@ -1,0 +1,26 @@
+---
+import BaseLayout from './base.astro'
+
+import '@fontsource/overpass/300.css'
+import '@fontsource/overpass/700.css'
+import '@fontsource/overpass/900.css'
+import '@fontsource/overpass/variable.css'
+import '@fontsource/overpass/variable-italic.css'
+import '~/styles/global.scss'
+---
+
+<BaseLayout>
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
+  <main>
+    <slot />
+  </main>
+</BaseLayout>
+
+<style lang="scss" is:global>
+  :root {
+    --font-family: 'Overpass', system-ui, Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+</style>
