@@ -23,12 +23,16 @@ const page = {
       />
       <h1>{page.title}</h1>
       <p>{page.content}</p>
-      <SNGRandCoLogo style={{ maxWidth: '100%', maxHeight: '35px' }} />
+      <SNGRandCoLogo
+        style={{ maxWidth: '100%', maxHeight: '50px', marginTop: '1.25rem' }}
+      />
     </article>
   </section>
 </Layout>
 
 <style lang="scss">
+  @use '../styles/colors';
+
   section {
     min-height: 85dvh;
     display: flex;
@@ -41,7 +45,7 @@ const page = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     max-width: 992px;
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +54,11 @@ const page = {
     p {
       text-align: center;
       margin: 0;
+    }
+
+    h1 {
+      @extend %gradient;
+      font-weight: 900;
     }
   }
 </style>

@@ -20,6 +20,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   sass: 1.59.2
+  sharp: ^0.31.3
   typescript: ^4.9.5
   unplugin-icons: 0.15.3
   vite-plugin-svgr: ^2.4.0
@@ -33,7 +34,7 @@ dependencies:
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@3.17.1+vite@4.1.2
   '@picocss/pico': 1.5.7
   '@svgr/core': 6.5.1
-  astro: 2.1.2_ogh2wwho6udthbgvzgsr4xoony
+  astro: 2.1.2_gkouei6jwrmihoze2gaayzzl3i
   astro-compress: 1.1.27
   astro-critters: 1.1.26
   astro-seo: 0.6.1
@@ -42,6 +43,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   sass: 1.59.2
+  sharp: 0.31.3
   unplugin-icons: 0.15.3_@svgr+core@6.5.1
   vite-plugin-svgr: 2.4.0_rollup@3.17.1+vite@4.1.2
 
@@ -103,7 +105,7 @@ packages:
       astro: ^2.1.0
     dependencies:
       '@astrojs/prism': 2.1.0
-      astro: 2.1.2_ogh2wwho6udthbgvzgsr4xoony
+      astro: 2.1.2_gkouei6jwrmihoze2gaayzzl3i
       github-slugger: 1.5.0
       image-size: 1.0.2
       import-meta-resolve: 2.2.1
@@ -1493,7 +1495,7 @@ packages:
     resolution: {integrity: sha512-eszmxiycjfLcmoRyB8x5lCrWAwcSHs1i5riR1a5JbyJI8OQAl9tn1JvWFRuZvNH483CFdfNCczirnc805t/soA==}
     dev: false
 
-  /astro/2.1.2_ogh2wwho6udthbgvzgsr4xoony:
+  /astro/2.1.2_gkouei6jwrmihoze2gaayzzl3i:
     resolution: {integrity: sha512-qxBIPHfFJhwNOxI2E96XrGrUM6lGkDRkDY8iqEJNFWPGP+t5yY5SWb8H+OdYUGopexy1GGjoY7SYQCzFBkt7iw==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -1544,6 +1546,7 @@ packages:
       rehype: 12.0.1
       semver: 7.3.8
       server-destroy: 1.0.1
+      sharp: 0.31.3
       shiki: 0.11.1
       slash: 4.0.0
       string-width: 5.1.2
