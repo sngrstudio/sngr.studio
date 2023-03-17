@@ -15,30 +15,30 @@
     "start": "pnpm dlx npm-run-all -s build preview"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.17.2",
-    "@astrojs/react": "^2.1.0",
-    "@astrojs/sitemap": "^1.1.0",
+    "@astrojs/mdx": "0.17.2",
+    "@astrojs/react": "2.1.0",
+    "@astrojs/sitemap": "1.2.1",
     "@fontsource/overpass": "4.5.11",
     "@iconify/json": "2.2.33",
     "@modyfi/vite-plugin-yaml": "1.0.4",
-    "@picocss/pico": "^1.5.7",
+    "@picocss/pico": "1.5.7",
     "@svgr/core": "6.5.1",
-    "astro": "^2.1.2",
+    "astro": "2.1.3",
     "astro-compress": "1.1.27",
     "astro-critters": "1.1.26",
     "astro-seo": "0.6.1",
     "postcss": "8.4.21",
-    "postcss-preset-env": "^8.0.1",
+    "postcss-preset-env": "8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.59.2",
-    "sharp": "^0.31.3",
+    "sharp": "0.31.3",
     "unplugin-icons": "0.15.3",
-    "vite-plugin-svgr": "^2.4.0"
+    "vite-plugin-svgr": "2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0",
+    "@types/node": "18.15.3",
     "@types/react": "18.0.28",
-    "typescript": "^4.9.5"
+    "typescript": "4.9.5"
   }
 }
