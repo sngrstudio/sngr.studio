@@ -15,8 +15,8 @@ dependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@fontsource/overpass':
-    specifier: 4.5.11
-    version: 4.5.11
+    specifier: 5.0.5
+    version: 5.0.5
   '@iconify/json':
     specifier: 2.2.78
     version: 2.2.78
@@ -1206,8 +1206,8 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource/overpass@4.5.11:
-    resolution: {integrity: sha512-x6A3fpFQdaqZ7O6LKyoeKzfzxjZhnJw1I7Yf4D8xKO8GM4N+0P8Ch6jIVD/DAgDmlc3/us5ZZEuaxwHJGiAkMA==}
+  /@fontsource/overpass@5.0.5:
+    resolution: {integrity: sha512-isIGRf1gx2YsJltvdTUcM14J/EbLr59YAHyYmLfTwmUIVCFw39Bmh1hxEDv3ZAuOQ+PC+2s5Tk8ym6uDAbwODw==}
     dev: false
 
   /@iconify/json@2.2.78:
