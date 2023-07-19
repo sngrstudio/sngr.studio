@@ -1,1 +1,5 @@
 @use '../../node_modules/@picocss/pico/scss/pico.slim.scss';
+
+:root {
+  --font-family: 'Overpass Variable', system-ui, sans-serif;
+}
