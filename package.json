@@ -18,7 +18,7 @@
     "@astrojs/mdx": "0.19.7",
     "@astrojs/react": "2.3.2",
     "@astrojs/sitemap": "2.0.2",
-    "@fontsource-variable/overpass": "^5.0.9",
+    "@fontsource-variable/overpass": "5.0.9",
     "@fontsource/overpass": "5.0.8",
     "@iconify/json": "2.2.110",
     "@modyfi/vite-plugin-yaml": "1.0.4",
