@@ -4,7 +4,7 @@ specifiers:
   '@astrojs/mdx': 0.19.7
   '@astrojs/react': 2.2.1
   '@astrojs/sitemap': 2.0.0
-  '@fontsource-variable/overpass': ^5.0.6
+  '@fontsource-variable/overpass': ^5.0.9
   '@fontsource/overpass': 5.0.5
   '@iconify/json': 2.2.78
   '@modyfi/vite-plugin-yaml': 1.0.4
