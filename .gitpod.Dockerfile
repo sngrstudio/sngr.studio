@@ -1,3 +1,3 @@
-FROM gitpod/workspace-node-lts
+FROM gitpod/workspace-full
 
 RUN npm i -g netlify-cli
