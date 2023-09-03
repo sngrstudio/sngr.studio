@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.2.0",
-    "@astrojs/mdx": "0.19.7",
+    "@astrojs/mdx": "1.0.0",
     "@astrojs/react": "2.3.2",
     "@astrojs/sitemap": "2.0.2",
     "@fontsource-variable/overpass": "5.0.9",
