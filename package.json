@@ -15,7 +15,7 @@
     "start": "pnpm dlx npm-run-all -s build preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.2.0",
+    "@astrojs/check": "0.2.0",
     "@astrojs/mdx": "1.0.0",
     "@astrojs/react": "3.0.0",
     "@astrojs/sitemap": "2.0.2",
@@ -31,8 +31,8 @@
     "astro-seo": "0.8.0",
     "postcss": "8.4.29",
     "postcss-preset-env": "9.1.3",
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
+    "prettier": "3.0.3",
+    "prettier-plugin-astro": "0.12.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.66.1",
