@@ -15,8 +15,8 @@ dependencies:
     specifier: 3.0.6
     version: 3.0.6(@types/react-dom@18.2.17)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(vite@4.5.0)
   '@astrojs/sitemap':
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 3.0.5
+    version: 3.0.5
   '@fontsource-variable/overpass':
     specifier: 5.0.16
     version: 5.0.16
@@ -251,8 +251,8 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/sitemap@2.0.2:
-    resolution: {integrity: sha512-dFWtdFwN8kxDiqIxF8T8ODqsUr6hG+EQlFEqm+3oQkhAkucF9QkYLM5Q72mEbYytkL4jvKyHbW1u10T5sWBZew==}
+  /@astrojs/sitemap@3.0.5:
+    resolution: {integrity: sha512-60eLzNjMza3ABypiQPUC6ElOSZNZeY5CwSwgJ03hfeonl+Db9x12CCzBFdTw7A5Mq+O54xEZVUrR0tB+yWgX8w==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.22.4

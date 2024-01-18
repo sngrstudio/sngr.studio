@@ -18,7 +18,7 @@
     "@astrojs/check": "0.3.1",
     "@astrojs/mdx": "1.1.5",
     "@astrojs/react": "3.0.6",
-    "@astrojs/sitemap": "2.0.2",
+    "@astrojs/sitemap": "3.0.5",
     "@fontsource-variable/overpass": "5.0.16",
     "@fontsource/overpass": "5.0.15",
     "@iconify/json": "2.2.150",
